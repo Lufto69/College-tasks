@@ -1,0 +1,68 @@
+<template>
+    <div class="about_services">
+        <div class="container_servise">
+            <div class="servise">
+                <img src="../views/img/IMG_4488-644.jpg" class="servise_img" alt="">
+                <div class="servise_text_box">
+                    <h1 class="servise_text">fdsgfsd</h1>
+                </div>
+            </div>
+            <div class="servise">
+                <img src="../views/img/IMG_4488-644.jpg" class="servise_img" alt="">
+                <div class="servise_text_box">
+                    <h1 class="servise_text">fdsgfsd</h1>
+                </div>
+            </div>
+            <div class="servise">
+                <img src="../views/img/IMG_4488-644.jpg" class="servise_img" alt="">
+                <div class="servise_text_box">
+                    <h1 class="servise_text">fdsgfsd</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<style lang="scss">
+.about_services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    max-width: 1125px;
+    justify-content: center;
+    .container_servise{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+        .servise{
+            margin: 40px 30px 20px 30px;
+            width: 400px;
+            height: 550px;
+            border-radius: 10px;
+            object-fit: cover;
+            background-size: cover;
+            overflow: hidden;
+            .servise_img{
+                height: 90%;
+                width: auto;
+            }
+            .servise_text_box{
+                background-color: rgba(58, 208, 218, 0.34);
+                height: 10%;
+                margin-top: -5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .servise_text{
+                    color: #000;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+</style>
