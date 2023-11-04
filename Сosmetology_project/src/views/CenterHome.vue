@@ -24,7 +24,7 @@
                     <li class="info_main">Новейшее оборудование</li>
                     <li class="info_main">Разнообразие процедур</li>
                     <li class="info_main">Широкие возможности </li>
-                    <li class="info_main">Доступность </li>
+                    <li class="info_main">Доступность</li>
                 </ul>
             </div>            
         </div>
