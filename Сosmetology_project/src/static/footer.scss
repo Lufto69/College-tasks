@@ -1,0 +1,57 @@
+.about_foot{
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      
+       justify-content: center;
+       max-width: 1125px;
+    .line{
+      background: #5DA4A4;
+      height: 3px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .footer_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .contacts{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .contact_title{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .contact_list_box{      
+        .contact_list{
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;  
+          line-height: 165.4%;      
+        }
+      }
+    }
+    .footer_menu{
+      width: 30%;
+      .footer_menu_list{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;     
+        line-height: 165.4%; 
+      }
+    }
+    .icon_stroc{
+      width: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
+  

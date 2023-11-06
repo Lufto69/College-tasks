@@ -1,0 +1,92 @@
+//Стили шапки не учитывающие размеров
+@mixin head{
+    .case_about_head{
+        width: 100%;
+        margin-top: 5px;
+        max-width: 1125px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .top_head{
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 60px 0px 60px;
+            .Logo_name{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .name{
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    color: #FFF;
+                    margin-left: 30px;
+                }
+            }
+            .contact{
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                align-items: center;
+                display: flex;
+            }
+        }
+        .Menu{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            .item_menu{
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .main_text{
+            margin-top: 90px;
+            margin-left: 60px;
+            .title{
+                color: #FFF;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+    
+            }
+            .tagline{
+                color: #FFF;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+//Вторая шапка
+.about_head_two{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(101deg, #54A4A4 25.39%, #3B8686 70.53%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include head();
+}
+
+//Первая шапка
+.about_head{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(101deg, #54A4A4 25.39%, #3B8686 70.53%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    @include head();
+}

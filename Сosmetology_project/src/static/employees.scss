@@ -1,0 +1,102 @@
+.about_employees{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    max-width: 1125px;
+    .employees_box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .employees_box_main{
+            width: 100%;
+            display: flex;
+            .employees_box_img{
+                width: 400px;
+                height: 500px;
+                border-radius: 30px;
+                .employees_img{
+                    width: auto;
+                    height: 500px;
+                    border-radius: 5px;
+                }
+            }
+            .employees_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .employees_name{
+                    color: #000;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+                .schedule_box{
+                    display: flex;
+                    flex-direction: column;
+                    .schedule{
+                        color: #000;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                    .schedule_time_case{
+                        display: flex;
+                        .schedule_time{
+                            display: flex;
+                            flex-direction: column;
+                            color: #000;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                        }
+                        .schedule_time_two{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 60px;
+                            color: #000;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .employees_button_box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                    .employees_button{
+                        width: 300px;
+                        height: 70px;
+                        border-radius: 30px;
+                        background-color:   #45D8EC;
+                        border: 0;
+                        filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.25));
+                        .employees_button_text{
+                            color: #000;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+        .employees_specialization{
+            margin-top: 80px;
+            .specialization{
+                color: #000;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+}

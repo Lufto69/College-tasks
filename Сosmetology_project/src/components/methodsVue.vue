@@ -6,31 +6,3 @@
         </div>
     </div>
 </template>
-<style lang="scss">
-.about_methods{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    max-width: 1125px;
-    .case_methods{
-        display: flex;
-        flex-direction: column;
-        .title_methods{
-            color: #000;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-        .text_methods{
-            color: #000;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 160.9%;
-            margin-top: 30px;
-        }
-    }
-}
-</style>
