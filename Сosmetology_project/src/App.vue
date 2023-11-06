@@ -1,16 +1,9 @@
-<template>
-  
-  <div id="app" class="app">   
-    <nav class="menu_kek">
-      <router-link to="/heder">Шапка</router-link>|
-      <router-link to="/footer">Подвал</router-link>|
-      <router-link to="/home">Основа</router-link>
-    </nav>
+<template>      
+<div class="app">
     <div class="content_box">
     <router-view class="content"/>
-  </div>
-  </div>
-  
+  </div>  
+</div>
 </template>
 
 <style lang="scss">
@@ -18,11 +11,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  widows: 100%;
-}
-.menu_kek{
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 .content_box{
   display: flex;

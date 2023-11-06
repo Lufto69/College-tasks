@@ -36,7 +36,7 @@
         </div>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .about_employees{
     width: 100%;
     display: flex;

@@ -1,56 +1,55 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Footer from '../views/FooterVue'
-import HederOne from '../views/HederOne'
-import HederTwo from '../views/HederTwo'
-import CenterHome from '../views/CenterHome'
-import Employees from '../views/employeesVue'
-import Services from '../views/servicesVue'
-import Price from '../views/priceVue'
-import Methods from '../views/methodsVue'
+import MidContent from '@/views/MidContent.vue'
+
+import CenterHome from '@/components/CenterHome.vue'
+import EmployeesVue from '@/components/employeesVue.vue'
+import HedenOne from '@/components/HederOne.vue'
+import HedenTwo from '@/components/HederTwo.vue'
+import ServicesVue from '@/components/servicesVue.vue'
+import PriceVue from '@/components/priceVue.vue'
+import MethodsVue from '@/components/methodsVue.vue'
+import ContactsVue from '@/components/contactsVue.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/footer',
-    name: 'footer',
-    component: Footer
+    path: '/',
+    name: 'MidContent',
+    component: MidContent,
+    children: [
+    
+      { path: '', components: {
+        default: CenterHome, menu: HedenOne
+      }    
+    },
+
+      { path: 'employees', components: {
+        default: EmployeesVue, menu: HedenTwo
+      }
+    },
+
+    { path: 'servises', components: {
+      default: ServicesVue, menu: HedenTwo
+    }
   },
-  {
-    path: '/heder',
-    name: 'heder',
-    component: HederOne
+
+    { path: 'price', components: {
+      default: PriceVue, menu: HedenTwo
+    }
   },
-  {
-    path: '/heder2',
-    name: 'heder2',
-    component: HederTwo
+
+    { path: 'methods', components: {
+    default: MethodsVue, menu: HedenTwo
+    }
   },
-  {
-    path: '/home',
-    name: 'home',
-    component: CenterHome
-  },
-  {
-    path: '/employees',
-    name: 'employees',
-    component: Employees
-  },
-  {
-    path: '/services',
-    name: 'services',
-    component: Services
-  },
-  {
-    path: '/price',
-    name: 'price',
-    component: Price
-  },
-  {
-    path: '/methods',
-    name: 'methods',
-    component: Methods
+    { path: 'concat', components: {
+    default: ContactsVue, menu: HedenTwo
+    }
+  }
+    ]
   }
 ]
 

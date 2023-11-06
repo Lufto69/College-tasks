@@ -11,7 +11,7 @@
                 </ul>
             </div>
             <div class="container_img">
-                <img src="./img/IMG_4488-644.jpg" class="img_home">
+                <img src="../views/img/IMG_4488-644.jpg" class="img_home">
             </div>
         </div>
         <div class="main_information_container">
@@ -43,6 +43,7 @@
     flex-direction: column;
     margin-top: 5px;
      max-width: 1125px;
+     justify-content: center;
     .main_information_container{
         display: flex;
         justify-content: space-between;
