@@ -1,12 +1,8 @@
 //Стили шапки не учитывающие размеров
 @mixin head{
     .case_about_head{
-        width: 100%;
-        margin-top: 5px;
-        max-width: 1125px;
-        display: flex;
+        @include about(5px);
         justify-content: center;
-        flex-direction: column;
         .top_head{
             display: flex;
             justify-content: space-between;
@@ -16,20 +12,12 @@
                 justify-content: space-around;
                 align-items: center;
                 .name{
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
-                    color: #FFF;
+                    @include text2(24px, 300);
                     margin-left: 30px;
                 }
             }
             .contact{
-                color: #FFF;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
+                @include text2(24px, 300);
                 align-items: center;
                 display: flex;
             }
@@ -39,30 +27,17 @@
             justify-content: space-around;
             margin-top: 30px;
             .item_menu{
-                color: #FFF;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+                @include text2(24px, 400);
             }
         }
         .main_text{
             margin-top: 90px;
             margin-left: 60px;
             .title{
-                color: #FFF;
-                font-size: 64px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-    
+                @include text2(64px, 500);    
             }
             .tagline{
-                color: #FFF;
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+                @include text2(32px, 400);
                 margin-top: 10px;
             }
         }
@@ -83,7 +58,7 @@
 //Первая шапка
 .about_head{
     width: 100%;
-    height: 600px;
+    height: 500px;
     background: linear-gradient(101deg, #54A4A4 25.39%, #3B8686 70.53%);
     display: flex;
     flex-direction: column;

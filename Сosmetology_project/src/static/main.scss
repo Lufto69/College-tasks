@@ -8,8 +8,14 @@
     font-family: 'Itim', cursive;
     font-family: 'Manrope', sans-serif;
     }
+    body{
+        width: 100%;
+    }
     html{
         scroll-behavior: smooth; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
         }
   
 //APP.VUE

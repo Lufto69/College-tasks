@@ -1,18 +1,10 @@
-@import './main.scss'; //главные стили
-@import './centerHome.scss';//главная страница
-@import './contacts.scss';//страница контактов
-@import './employees.scss';//страница сотрудников
-@import './footer.scss';// подвал
-@import './head.scss';// шапки
-@import './methods.scss';// информация 
-@import './price.scss';//цкны
-@import './services.scss';// виды процедур
-
-//Миксины
-@mixin about{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-     max-width: 1125px;
-}
+@import "./components.scss";
+@import "./main.scss"; //главные стили
+@import "./footer.scss";// подвал
+@import "./head.scss";// шапки
+@import "./centerHome.scss"; //главная страница
+@import "./contacts.scss";//страница контактов
+@import "./employees.scss";//страница сотрудников
+@import "./methods.scss";// информация 
+@import "./price.scss";//цены
+@import "./services.scss";// виды процедур

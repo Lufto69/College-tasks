@@ -1,0 +1,35 @@
+//Стили extend
+.about_style{
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    max-width: 1025px;
+    margin: 0px 20px 0px 20px;
+}
+.text{
+    color: #000;    
+    font-style: normal;    
+    line-height: normal;
+}
+.text2{
+    color: #FFF;    
+    font-style: normal;    
+    line-height: normal;
+}
+//Миксины
+@mixin about($mar: 0px){
+    @extend .about_style;
+    margin-top: $mar ;
+}
+
+@mixin text($font-size: 0px, $font-weight: 0){
+    font-size: $font-size - 7px;
+    font-weight: $font-weight; 
+    @extend .text;
+}
+
+@mixin text2($font-size: 0px, $font-weight: 0){
+    font-size: $font-size - 7px;
+    font-weight: $font-weight; 
+    @extend .text2;
+}
