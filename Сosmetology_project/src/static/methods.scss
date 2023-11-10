@@ -7,11 +7,17 @@
         margin: 10px 30px 20px 30px;
         .title_methods{
             @include text(48px, 400);
+            @media screen and (max-width: 660px){
+                @include text(40px, 300);
+              }   
         }
         .text_methods{
             @include text(32px, 300);
             line-height: 160.9%;
             margin-top: 30px;
+            @media screen and (max-width: 660px){
+                @include text(26px, 300);
+              }   
         }
     }
 }

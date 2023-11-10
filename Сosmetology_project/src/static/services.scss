@@ -1,5 +1,5 @@
 .about_services{
-    @include about(5px);
+    @include about(5px);   
     justify-content: center;
     .container_servise{
         display: flex;
@@ -8,12 +8,16 @@
        
         .servise{
             margin: 40px 30px 20px 30px;
-            width: 400px;
-            height: 550px;
+            width: 400px - 100px;
+            height: 550px - 115px;
             border-radius: 10px;
             object-fit: cover;
             background-size: cover;
             overflow: hidden;
+            @media screen and (max-width: 660px){
+                width: auto;
+                height: 325px;
+              }   
             .servise_img{
                 height: 90%;
                 width: auto;
@@ -27,6 +31,7 @@
                 align-items: center;
                 .servise_text{
                     @include text(24px, 300);
+                    
                 }
             }
         }

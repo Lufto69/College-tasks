@@ -4,18 +4,34 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 20px 0px 20px 50px;
+        margin: 10px 20px 20px 20px;
+        @media screen and (max-width: 768px){
+            margin: 10px 0px 10px 0px;
+          }   
         .employees_box_main{
             width: 100%;
             display: flex;
+            justify-content: center;
+            @media screen and (max-width: 768px){
+                flex-direction: column;
+                align-items: center;
+              }   
             .employees_box_img{
                 width: 400px;
                 height: 500px;
                 border-radius: 30px;
+                @media screen and (max-width: 768px){
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }   
                 .employees_img{
                     width: auto;
                     height: 500px;
                     border-radius: 5px;
+                    @media screen and (max-width: 660px){
+                        height: 400px;
+                      }   
                 }
             }
             .employees_info{
@@ -23,13 +39,24 @@
                 flex-direction: column;
                 justify-content: space-around;
                 .employees_name{
+                    margin-bottom: 20px;
                     @include text(46px, 300);
+                    @media screen and (max-width: 660px){
+                        @include text(38px, 300);
+                        text-align: center;
+                        margin-bottom: 20px;
+                      }   
                 }
                 .schedule_box{
                     display: flex;
                     flex-direction: column;
                     .schedule{
+                        margin-bottom: 10px;
                         @include text(36px, 300);
+                        @media screen and (max-width: 660px){
+                            @include text(28px, 300);
+                            margin-bottom: 10px;
+                          }   
                     }
                     .schedule_time_case{
                         display: flex;
@@ -37,12 +64,18 @@
                             display: flex;
                             flex-direction: column;
                             @include text(36px, 300);
+                            @media screen and (max-width: 660px){
+                                @include text(28px, 300);
+                              }   
                         }
                         .schedule_time_two{
                             display: flex;
                             flex-direction: column;
                             margin-left: 60px;
                             @include text(36px, 300);
+                            @media screen and (max-width: 660px){
+                                @include text(28px, 300);
+                              }   
                         }
                     }
                 }
@@ -60,6 +93,9 @@
                         filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.25));
                         .employees_button_text{
                             @include text(32px, 500);
+                            @media screen and (max-width: 660px){
+                                @include text(28px, 300);
+                              }   
                         }
                     }
                 }
@@ -69,6 +105,10 @@
             margin-top: 80px;
             .specialization{
                 @include text(40px, 300);
+                @media screen and (max-width: 660px){
+                    @include text(36px, 300);
+                    text-align: center;
+                  }   
             }
         }
     }

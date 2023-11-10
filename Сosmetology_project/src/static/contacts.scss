@@ -9,17 +9,45 @@
         .tytle_contacts{
             @include text(48px, 300);
             margin-top: 40px;
+            @media screen and (max-width: 660px){
+                @include text(38px, 300);
+              }    
+            @media screen and (max-width: 420px){
+            font-size: 20px;
+            }
         }
         .case_contacts_list{
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
+            @media screen and (max-width: 420px){
+                margin-top: 10px;
+            }
             .paragraph, .meaning{
                 @include text(36px, 300);
                 line-height: 150.4%;
                 display: flex;
                 flex-direction: column;
+            @media screen and (max-width: 660px){
+                @include text(28px, 300);
+            }
+            @media screen and (max-width: 420px){
+                font-size: 14px;
             }
         }
     }
+}
+.main_information_container{
+    width: 80%;
+.map_Home{
+    width: 100%;
+    margin-top: 10px;
+    .map{
+        height: 400px;
+        @media screen and (max-width: 660px){
+            height: 200px;
+          } 
+    }
+}
+}
 }

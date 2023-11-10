@@ -17,20 +17,38 @@
       flex-direction: column;
       justify-content: space-between;
       .contact_title{
-        @include text(36px, 300);
+        @include text(28px, 300);
+        @media screen and (max-width: 560px){
+          @include text(24px, 300);
+        };
+        @media screen and (max-width: 420px){
+          font-size: 14px;
+        }
       }
-      .contact_list_box{      
+      .contact_list_box{        
         .contact_list{
           @include text(24px, 300);
-          line-height: 165.4%;      
+          @media screen and (max-width: 560px){
+            @include text(20px, 300);
+          };
+          @media screen and (max-width: 420px){
+            font-size: 10px;
+          }
+          line-height: 155.4%;             
         }
       }
     }
     .footer_menu{
-      width: 30%;
+      width: 30%;      
       .footer_menu_list{
         @include text(24px, 300);
-        line-height: 165.4%; 
+        @media screen and (max-width: 560px){
+          @include text(20px, 300);
+        };
+        @media screen and (max-width: 420px){
+          font-size: 10px;
+        };
+        line-height: 155.4%;         
       }
     }
     .icon_stroc{
@@ -38,7 +56,18 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      .icon_box{
+        .icon_svg{
+        @media screen and (max-width: 560px){
+          width: 20px;
+          height: 20px;
+          }
+        @media screen and (max-width: 420px){
+          width: 15px;
+          height: 15px;
+        };
+        }
+      }
     }
   }
 }
-  

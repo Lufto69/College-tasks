@@ -1,28 +1,53 @@
 .about_price{
     @include about(60px);
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .case_price{
         display: flex;
         flex-direction: column;
         margin: 20px;
+        width: 80%;
+        
+        
         .title_price{
             @include text(48px, 300);
+            @media screen and (max-width: 660px){
+                @include text(42px, 300);
+              } 
+            @media screen and (max-width: 420px){
+                font-size: 26px;
+            }
         }
         .case_price_list{
             margin-top: 40px;
             display: flex;
             justify-content: space-between;
+            
             .name_price{
                 display: flex;
                 flex-direction: column;
                 @include text(36px, 300);
                 line-height: 179.938%;
+                @media screen and (max-width: 660px){
+                    @include text(32px, 300);
+                  }   
+                  @media screen and (max-width: 420px){
+                    font-size: 20px;
+                }
             }
             .prices_in_price{
                 display: flex;
                 flex-direction: column;
                 @include text(36px, 300);
                 line-height: 179.938%;
+                @media screen and (max-width: 660px){
+                    @include text(32px, 300);
+                  }   
+                  @media screen and (max-width: 420px){
+                    font-size: 20px;
+                }
             }
         }
     }

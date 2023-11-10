@@ -1,16 +1,27 @@
+#kek{flex-direction: column-reverse;}
 .about_Home{
     @include about(5px);
     justify-content: center;
     bottom: 10px;
+    @media screen and (max-width: 830px){
+        
+    }
     .main_information_container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 20px;
+        margin: 20px 20px 0px 20px;
+        @media screen and (max-width: 830px){
+          flex-direction: column; 
+          }   
         .box_info_main_container{
             .title_info_main{
                 @include text(42px, 300);
                 margin-top: 20px;
+                @media screen and (max-width: 660px){
+                    @include text(32px, 300);
+                  }   
+                  
             }
             .info_main_container{
                 margin: 25px 0px 35px 35px;
@@ -18,7 +29,9 @@
                 .info_main{
                     @include text(36px, 300);
                     line-height: 122.4%;
-                    
+                    @media screen and (max-width: 660px){
+                        @include text(26px, 300);
+                      }   
                 }
                 .info_main::marker{
                     color: #5DA4A4;
@@ -44,6 +57,15 @@
         .map_Home{
             width: 100%;
             margin-top: 10px;
+            @media screen and (max-width: 660px){
+                margin-top: 0px;
+              } 
+            .map{
+                height: 400px;
+                @media screen and (max-width: 660px){
+                    height: 200px;
+                  } 
+            }
         }
     }
 }
