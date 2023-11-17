@@ -1,8 +1,22 @@
 <template>
     <div class="about_methods">
         <div class="case_methods">
-            <h1 class="title_methods">nbdufnv</h1>
-            <h1 class="text_methods">коррекция макрорельефа кожи (устранение косметических дефектов) при помощи специальных препаратов – филлеров. В современной косметологии контурную пластику рассматривают как альтернативу пластической хирургии, позволяющую добиваться впечатляющего эффекта безоперационным путем и с мгновенным результатом.</h1>
+            <h1 class="title_methods">{{ card.name }}</h1>
+            <span class="text_methods">{{ card.info }}</span>
         </div>
     </div>
 </template>
+<script>
+import data from '@/data.js'
+
+
+export default {
+
+
+    data(){
+    return{
+        card: data.find((e) => e.id==this.$route.params.id)
+    }
+    },
+}
+</script>

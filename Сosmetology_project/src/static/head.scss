@@ -110,21 +110,22 @@
             }
         }
         .main_text{
-            margin-top: 90px;
+            margin-top: 70px;
             margin-left: 60px;
+            
             @media screen and (max-width: 660px){
                 display: none;
               }    
             .title{
-                @include text_two(64px, 500);
+                @include text_two(48px, 500);
                 @media screen and (max-width: 660px){
-                    @include text_two(42px, 300);
+                    @include text_two(36px, 300);
                   }    
             }
             .tagline{
                 @include text_two(32px, 400);
                 @media screen and (max-width: 660px){
-                    @include text_two(30px, 300);
+                    @include text_two(24px, 300);
                   }
                 margin-top: 10px;
             }

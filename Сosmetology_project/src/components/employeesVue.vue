@@ -21,11 +21,13 @@
                                 <span>Выходной</span>
                             </h1>
                         </div>
-                        <div class="employees_button_box">
-                            <button class="employees_button">
-                                <h1 class="employees_button_text">Запись на приём</h1>
-                            </button>
-                        </div>
+                        <router-link to="concat">
+                            <div class="employees_button_box">
+                                <button class="employees_button">
+                                    <h1 class="employees_button_text">Запись на приём</h1>
+                                </button>
+                            </div>
+                        </router-link> 
                     </div>
                 </div>
             </div>

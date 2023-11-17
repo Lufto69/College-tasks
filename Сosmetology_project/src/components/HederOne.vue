@@ -29,21 +29,21 @@
                         <li><router-link to="servises" class="rout_link"><h1 class="item_burg_menu">Услуги</h1></router-link></li>
                         <li><router-link to="employees" class="rout_link"><h1 class="item_burg_menu">Сотрудники</h1></router-link></li>
                         <li><router-link to="methods" class="rout_link"><h1 class="item_burg_menu">Методики</h1></router-link></li>
-                        <li><router-link to="price" class="rout_link"><h1 class="item_burg_menu">Цены</h1></router-link></li>
+                        <li><router-link to="price" class="rout_link"><h1 class="item_burg_menu">Прайс</h1></router-link></li>
                         <li><router-link to="concat" class="rout_link"><h1 class="item_burg_menu">Контакты</h1></router-link></li>
                     </ul>                
             </div>
         </div>
         <div class="Menu">
+          <router-link to="/">  <h1 class="item_menu">Главная</h1></router-link>
           <router-link to="servises">   <h1 class="item_menu">Услуги</h1></router-link> 
           <router-link to="employees">   <h1 class="item_menu">Сотрудники</h1></router-link>
-          <router-link to="methods">   <h1 class="item_menu">Методики</h1></router-link>
-          <router-link to="price">   <h1 class="item_menu">Цены</h1></router-link>
+          <router-link to="price">   <h1 class="item_menu">Прайс</h1></router-link>
           <router-link to="concat">   <h1 class="item_menu">Контакты</h1></router-link>
         </div>
         <div class="main_text">
-            <h1 class="title">Меняйся к лучшему</h1>
-            <h1 class="tagline">Cоздай образ что будет тебе к лицу</h1>
+            <h1 class="title">Весь комплекс косметологических услуг</h1>
+            <h1 class="tagline">Помогу выглядеть на 100% в любом возрасте</h1>
         </div>
         </div>
     </div>

@@ -5,20 +5,20 @@
       <div class="contacts">
         <h1 class="contact_title">Контакты</h1>  
         <div class="contact_list_box">
-          <h1 class="contact_list">Сывтывкар</h1>
+          <h1 class="contact_list">г. Сыктывкар Ул. Старовского 22 /11</h1>
           <h1 class="contact_list">+7 906 142 60 10</h1>
-          <h1 class="contact_list">hubbj@mail.ru</h1>
+          <h1 class="contact_list">Kurbanova1975@incloud.com</h1>
         </div>
       </div>
       <div class="footer_menu">
         <router-link to="/"><h1 class="footer_menu_list">Главная</h1></router-link>
         <router-link to="servises"><h1 class="footer_menu_list">Услуги</h1></router-link>
         <router-link to="employees"><h1 class="footer_menu_list">Сотрудники</h1></router-link>
-        <router-link to="methods"> <h1 class="footer_menu_list">Методики</h1></router-link>
-        <router-link to="price"> <h1 class="footer_menu_list">Цены</h1></router-link>
+        <router-link to="price"> <h1 class="footer_menu_list">Прайс</h1></router-link>
         <router-link to="concat"><h1 class="footer_menu_list">Контакты</h1></router-link>
       </div>
       <div class="icon_stroc">
+        <a href="https://vk.com/asiatkurbanova">
         <div class="icon_box">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon_svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
   <g clip-path="url(#clip0_15_148)">
@@ -31,6 +31,7 @@
   </defs>
           </svg>
         </div>
+      </a>
         <div class="icon_box">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon_svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
   <g clip-path="url(#clip0_15_151)">
@@ -56,7 +57,8 @@
   </defs>
           </svg>
         </div>
-        <div class="icon_box">
+        <a href="https://instagram.com/cosmetolog_asiyat?igshid=MTNqZHJzams3c3BlbQ==">
+        <div class="icon_box">          
           <svg xmlns="http://www.w3.org/2000/svg" class="icon_svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                       <g clip-path="url(#clip0_15_158)">
                         <path d="M15.75 3.67381C19.755 3.67381 20.23 3.68881 21.8113 3.76131C23.4463 3.83631 25.13 4.20881 26.3213 5.40006C27.5238 6.60256 27.885 8.27006 27.96 9.91006C28.0325 11.4913 28.0475 11.9663 28.0475 15.9713C28.0475 19.9763 28.0325 20.4513 27.96 22.0326C27.8862 23.6588 27.505 25.3588 26.3213 26.5426C25.1188 27.7451 23.4525 28.1063 21.8113 28.1813C20.23 28.2538 19.755 28.2688 15.75 28.2688C11.745 28.2688 11.27 28.2538 9.68875 28.1813C8.075 28.1076 6.3525 27.7176 5.17875 26.5426C3.9825 25.3463 3.615 23.6626 3.54 22.0326C3.4675 20.4513 3.4525 19.9763 3.4525 15.9713C3.4525 11.9663 3.4675 11.4913 3.54 9.91006C3.61375 8.29006 3.99875 6.58006 5.17875 5.40006C6.37875 4.20006 8.0525 3.83631 9.68875 3.76131C11.27 3.68881 11.745 3.67381 15.75 3.67381ZM15.75 0.971313C11.6762 0.971313 11.165 0.988813 9.565 1.06131C7.24625 1.16756 4.94375 1.81256 3.2675 3.48881C1.585 5.17131 0.94625 7.46881 0.84 9.78631C0.7675 11.3863 0.75 11.8976 0.75 15.9713C0.75 20.0451 0.7675 20.5563 0.84 22.1563C0.94625 24.4726 1.59375 26.7813 3.2675 28.4538C4.94875 30.1351 7.25 30.7751 9.565 30.8813C11.165 30.9538 11.6762 30.9713 15.75 30.9713C19.8238 30.9713 20.335 30.9538 21.935 30.8813C24.2525 30.7751 26.5575 30.1288 28.2325 28.4538C29.9163 26.7701 30.5537 24.4738 30.66 22.1563C30.7325 20.5563 30.75 20.0451 30.75 15.9713C30.75 11.8976 30.7325 11.3863 30.66 9.78631C30.5537 7.46756 29.9075 5.16381 28.2325 3.48881C26.5538 1.81006 24.2462 1.16631 21.935 1.06131C20.335 0.988813 19.8238 0.971313 15.75 0.971313Z" fill="url(#paint0_linear_15_158)"/>
@@ -80,8 +82,9 @@
                           <rect width="30" height="30" fill="white" transform="translate(0.75 0.971313)"/>
                         </clipPath>
                       </defs>
-          </svg>
+          </svg>        
         </div>
+      </a>
       </div>
     </div>
   </div>

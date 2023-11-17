@@ -12,6 +12,7 @@ import MethodsVue from '@/components/methodsVue.vue'
 import ContactsVue from '@/components/contactsVue.vue'
 
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -35,6 +36,12 @@ const routes = [
       default: ServicesVue, menu: HedenTwo
     }
   },
+
+  
+  { path: 'servises/:id', components: {
+    default: MethodsVue, menu: HedenTwo
+  }
+},
 
     { path: 'price', components: {
       default: PriceVue, menu: HedenTwo

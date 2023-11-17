@@ -1,4 +1,4 @@
-#kek{flex-direction: column-reverse;}
+
 .about_Home{
     @include about(5px);
     justify-content: center;
@@ -13,8 +13,10 @@
         margin: 20px 20px 0px 20px;
         @media screen and (max-width: 830px){
           flex-direction: column; 
+          #kek{ flex-direction: column-reverse;}
           }   
         .box_info_main_container{
+            
             .title_info_main{
                 @include text(42px, 300);
                 margin-top: 20px;
@@ -24,8 +26,8 @@
                   
             }
             .info_main_container{
-                margin: 25px 0px 35px 35px;
-                
+                margin: 25px 0px 0px 35px;
+                max-width: 700px;
                 .info_main{
                     @include text(36px, 300);
                     line-height: 122.4%;
@@ -49,9 +51,9 @@
             justify-content: center;
             border-radius: 100%;
             .img_home{            
-            height: 100%;
-            width: auto;
-            margin-left: 60px;
+            height: auto;
+            width: auto;            
+            
             }
         }
         .map_Home{

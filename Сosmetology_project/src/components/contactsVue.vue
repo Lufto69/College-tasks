@@ -10,10 +10,10 @@
                     <span>Watsap: </span>
                 </h1>
                 <h1 class="meaning">
-                    <span>Улица ангельская 9 б</span>
-                    <span>+7 906 142 60 10</span>
-                    <span>sffffdfsgfsd@mail.ru</span>
-                    <span>+7 906 142 60 10</span> 
+                    <span>г. Сыктывкар Ул. Старовского 22 /11</span>
+                    <span>8 906-142-60-10</span>
+                    <span>Kurbanova1975@incloud.com</span>
+                    <span>8 906-142-60-10</span> 
                 </h1>
             </div>
         </div>

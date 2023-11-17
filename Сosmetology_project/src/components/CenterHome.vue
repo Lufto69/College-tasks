@@ -2,12 +2,12 @@
     <div class="about_Home">
         <div class="main_information_container">
             <div class="box_info_main_container">
-                <h1 class="title_info_main">Профессиональный косметолог</h1>
+                <h1 class="title_info_main">Профессиональный врач косметолог</h1>
                 <ul class="info_main_container">
-                    <li class="info_main">Курирование по всем вопросам</li>
-                    <li class="info_main">Подбор правильных средств</li>
-                    <li class="info_main">Индивидуальный подход</li>
-                    <li class="info_main">Опыт в сфере больше 10 лет</li>
+                    <li class="info_main">Консультация по всем вопросам</li>
+                    <li class="info_main">Подбор средств по уходу за кожей лица и тела</li>
+                    <li class="info_main">Рекомендации и сопровождение после процедур</li>
+                    <li class="info_main">Опыт в области косметологии более 17 лет </li>
                 </ul>
             </div>
             <div class="container_img">
@@ -16,15 +16,14 @@
         </div>
         <div class="main_information_container" id="kek">
             <div class="container_img">
-                <img src="" class="img_home">
+                <img src="../views/img/Mid_two.jpg" class="img_home" id="main_two">
             </div>
             <div class="box_info_main_container">
-                <h1 class="title_info_main">Оборудованное помещение</h1>
+                <h1 class="title_info_main">К Вашим услугам:</h1>
                 <ul class="info_main_container">
-                    <li class="info_main">Новейшее оборудование</li>
-                    <li class="info_main">Разнообразие процедур</li>
-                    <li class="info_main">Широкие возможности </li>
-                    <li class="info_main">Доступность</li>
+                    <li class="info_main">Широкий перечень инъекционных и уходовых процедур по омоложению лица и тела</li>
+                    <li class="info_main">Индивидуальный подход к каждому пациенту </li>
+                    <li class="info_main">Доступность и качество процедур</li>
                 </ul>
             </div>            
         </div>
