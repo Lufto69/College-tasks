@@ -18,8 +18,8 @@
             <div class="container_img">
                 <img src="../views/img/Mid_two.jpg" class="img_home" id="main_two">
             </div>
-            <div class="box_info_main_container">
-                <h1 class="title_info_main">К Вашим услугам:</h1>
+            <div class="box_info_main_container" id ="box_info_main_container_2">
+                <h1 class="title_info_main">К вашим услугам:</h1>
                 <ul class="info_main_container">
                     <li class="info_main">Широкий перечень инъекционных и уходовых процедур по омоложению лица и тела</li>
                     <li class="info_main">Индивидуальный подход к каждому пациенту </li>

@@ -7,7 +7,7 @@
         <div class="contact_list_box">
           <h1 class="contact_list">г. Сыктывкар Ул. Старовского 22 /11</h1>
           <h1 class="contact_list">+7 906 142 60 10</h1>
-          <h1 class="contact_list">Kurbanova1975@incloud.com</h1>
+          <h1 class="contact_list" id = "contact_list_1">Kurbanova1975 @incloud.com</h1>
         </div>
       </div>
       <div class="footer_menu">
