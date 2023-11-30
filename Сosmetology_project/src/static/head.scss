@@ -5,6 +5,7 @@
     width: auto;
     height: auto;
     display: block;
+    z-index: 2;
     .menu_burg{
       display: block;
       position: fixed;
@@ -28,14 +29,15 @@
   #menu-toggle{
     opacity: 0;
   }
-  #menu-toggle:checked ~ .menu_burg{
-    visibility: visible;
-    right: 0;
-  }
   #menu-toggle:checked ~ .rout_link{
     visibility: hidden;
     right: -100%;
   }
+  #menu-toggle:checked ~ .menu_burg{
+    visibility: visible;
+    right: 0;
+  }
+  
 }
 .item_burg_menu{
   @include text(35px, 300);

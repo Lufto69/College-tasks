@@ -38,10 +38,10 @@ const routes = [
   },
 
   
-  { path: 'servises/:id', components: {
-    default: MethodsVue, menu: HedenTwo
-  }
-},
+    { path: 'servises/:id', components: {
+      default: MethodsVue, menu: HedenTwo
+    }
+  },
 
     { path: 'price', components: {
       default: PriceVue, menu: HedenTwo

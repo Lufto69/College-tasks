@@ -29,7 +29,6 @@
                         <li><router-link to="/" class="rout_link"><h1 class="item_burg_menu">Главная</h1></router-link></li>
                         <li><router-link to="servises" class="rout_link"><h1 class="item_burg_menu">Услуги</h1></router-link></li>
                         <li><router-link to="employees" class="rout_link"><h1 class="item_burg_menu">Сотрудники</h1></router-link></li>
-                        <li><router-link to="methods" class="rout_link"><h1 class="item_burg_menu">Методики</h1></router-link></li>
                         <li><router-link to="price" class="rout_link"><h1 class="item_burg_menu">Прайс</h1></router-link></li>
                         <li><router-link to="concat" class="rout_link"><h1 class="item_burg_menu">Контакты</h1></router-link></li>
                     </ul>                
