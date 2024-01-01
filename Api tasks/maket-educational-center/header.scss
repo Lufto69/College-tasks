@@ -1,0 +1,31 @@
+.address_case{
+    display: flex;
+    justify-content: space-around;
+    .address_svg_text{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .address_svg{
+            margin-right: 7px;
+        }
+        .address_text{
+            color: #1D1D1B;
+            font-family: Gotham Pro;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .contacts{
+        display: flex;
+        justify-content: space-around;
+        @extend .address_svg_text;
+    }
+    .indentation_case_one{
+        margin-right: 14px;
+    }
+    .indentation_case_two{
+        margin-left: 14px;
+    }
+} 

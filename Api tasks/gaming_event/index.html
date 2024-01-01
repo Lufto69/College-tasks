@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes of Might and Magic III</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&family=Roboto:wght@100&family=Ubuntu:wght@400;500;700&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body> 
+
+    <div class="video">
+        <video class="vid" loop="loop" controls="controls">
+            <source src="/video/Tavern.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        </video>
+    </div>
+
+    <section class="top">
+        <div class="container">
+            <h1 class="title">Возрождение</h1>
+            <h2 class="legend">Легенды</h2>
+            <h2 class="second_title">Война морей!</h2>
+        </div>
+    </section>
+
+    <section class="heroes">
+        <div class="container">
+            <h2 class="title_hero">Новые герои</h2>
+            <img src="/img/imeges/heroes2.jpg" alt="heroes" class="heroes_img">
+        </div>
+    </section>
+
+    <section class="map_history">
+        <div class="container">
+            <h2 class="title_map">Неизведанные карты</h2>
+            <h2 class="title_map_second">ПРИКЛЮЧЕНИЯ</h2>
+            <h2 class="text_map">
+                поиск легенарого клинка арандита<br>
+                игры разумов воителей<br>
+                сокровища и мореплавания
+            </h2>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="container">
+            <div class="top_text">
+                <h2 class="events_text">Поддержи наш проект и получи  эксклюзивный опыт</h2>
+                <h2 class="events_text">Каждый кто зарегистрируется получит бонус к начальным ресурсам и получит наёмников себе в команду</h2>
+            </div>
+            <div class="events_item_case">
+                <h2 class="title_events">ТЕБЯ ЖДУТ</h2>
+                <div class="items_case">
+                    <div class="item" id="1">
+                        <img src="/img/imeges/dragons.gif" alt="dragons" class="item_img">
+                        <h2 class="item_text">Войны и сражения</h2>
+                    </div>
+                    <div class="item" id="2">
+                        <img src="/img/imeges/voin.gif" alt="voin" class="item_img">
+                        <h2 class="item_text">Кланы и государства</h2>
+                    </div>
+                    <div class="item" id="3">
+                        <img src="/img/imeges/snake.gif" alt="snake" class="item_img">
+                        <h2 class="item_text">Новые классы противников</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <h2 class="title_download">Скачай игру уже сейчас</h2>
+            <button class="button_download">
+                <img src="/img/icons/download.svg" alt="download" class="img_download">
+                <h2 class="text_download">download</h2>
+            </button>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="title_contacts">ты наша надежда!</h2>
+            <h2 class="text_contacts">ТОлько вы сможете дать игре второй шанс и возродить комюнити</h2>
+            <h2 class="text_invite">Вступи в наши сети и развивайся вместе со своими товарищами и получи доступ к прямому контакту с разработчиками</h2>
+            <div class="masseng">
+                <img src="/img/icons/ds.svg" alt="ds" class="masseng_item">
+                <img src="/img/icons/tg.svg" alt="tg" class="masseng_item">
+            </div>
+        </div>
+    </section>
+    <script>
+            const an = document.querySelector("item")
+            const a = document.querySelector("#1")
+            const aa = document.querySelector("#2")
+            const aaa = document.querySelector("#3")
+
+            
+            a.addEventListener('click', function(){
+                document.querySelector("#1").style.display = "block";
+            })
+            
+            
+    </script>
+</body>
+</html>

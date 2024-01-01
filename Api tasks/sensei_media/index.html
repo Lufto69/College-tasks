@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensei Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;400;500;600;700&family=Roboto:wght@100&family=Ubuntu:wght@400;500;700&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bloc_case">
+        <div class="container">
+            <img class="logo" src="img/svg/logo 2.png">
+            <nav>
+                <h2>Главная</h2>
+                <h2>Услуги</h2>
+                <h2>Наши работы</h2>
+                <h2>Контакты</h2>
+            </nav>
+            <button class="header_but">Заказать звонок</button>
+        </div>
+    </header>
+
+    <section class="bloc_case">
+        <div class="container">
+            <div class="one_top_cese">
+                <h1 class="title_top_bloc"><span>Студия дизайна</span> полного цикла</h1>
+                <h2 class="text_top_bloc">От дизайна визиток до дизайна сайтов</h2>
+                <div class="top_bloc_button_cese">
+                    <button class="top_button">Комплексные решения</button>
+                    <button class="top_button">Логотипы</button>
+                    <button class="top_button">Дизайн</button>
+                </div>
+            </div>
+            <img src="img/svg/first_blok_item.svg" alt="" class="top_bloc_img">
+        </div>
+    </section>
+
+    <section class="bloc_case stat_bloc">
+        <div class="container stat_bloc_container">
+            <h2 class="title_stat_bloc">Мы знаем толк в дизайне!</h2>
+            <div class="case_stat_item">
+                <div class="stat_item">
+                    <h2 class="title_stat">6 лет</h2>
+                    <h3 class="text_stat_title">В сфере рекламы</h3>
+                </div>
+                <div class="stat_item">
+                    <h2 class="title_stat">более 100</h2>
+                    <h3 class="text_stat_title">Наших постоянных клиентов</h3>
+                </div>
+                <div class="stat_item">
+                    <h2 class="title_stat">+20%</h2>
+                    <h3 class="text_stat_title">Конверсия продаж</h3>
+                </div>
+                <div class="stat_item">
+                    <h2 class="title_stat">-70%</h2>
+                    <h3 class="text_stat_title">Ошибок менеджеров</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bloc_case servise">
+        <div class="container">
+            <h2 class="title_services">Наши услуги</h2>
+            <div class="item_services_container" id="container">
+                
+                <template id="item_one">
+                    <div class="item_service">
+                        <div class="box_item">
+                            <div class="box_item_topel">
+                                <div class="title_item_service_box">
+                                    <h2 class="title_item_service"></h2>
+                                </div>
+                                <div class="points_item_service">
+                                    <div class="points_item">
+                                        <img src="img/svg/akar-icons_circle-check-fill.svg" alt="" class="img_point">
+                                        <h3 class="text_point" id="el_item_text1"></h3>
+                                    </div>
+                                    <div class="points_item">
+                                        <img src="img/svg/akar-icons_circle-check-fill.svg" alt="" class="img_point">
+                                        <h3 class="text_point" id="el_item_text2"></h3>
+                                    </div>
+                                    <div class="points_item">
+                                        <img src="img/svg/akar-icons_circle-check-fill.svg" alt="" class="img_point">
+                                        <h3 class="text_point" id="el_item_text3"></h3>
+                                    </div>
+                                    <div class="points_item">
+                                        <img src="img/svg/akar-icons_circle-check-fill.svg" alt="" class="img_point">
+                                        <h3 class="text_point" id="el_item_text4"></h3>
+                                    </div>
+                                    <div class="points_item">
+                                        <img src="img/svg/akar-icons_circle-check-fill.svg" alt="" class="img_point">
+                                        <h3 class="text_point" id="el_item_text5"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foot_item_box">
+                                <hr class="line_price_item">
+                                <h2 class="text_price_item_service">от<span class="prise"></span></h2>
+                            </div>
+                        </div>
+                        <button class="button_item_service">Подробнее</button>
+                    </div>
+                </template>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bloc_case form">
+        <div class="container">
+            <div class="case_form">
+                <h2 class="title_form">заказать Консультацию специалиста</h2>
+                <h2 class="text_form">Заполните форму и мы свяжемся с вами в ближайшее время!</h2>
+                <form class="items_form">
+                    <div class="first_item_case">
+                        <input type="text" placeholder="Ваше имя" required class="item_form_one focus_form">
+                        <input type="text" placeholder="Номер вашего телефона" required class="item_form_one focus_form">
+                    </div>
+                    <input type="text" placeholder="Ваш вопрос" required class="item_form_two focus_form">
+                    <div class="checkbox_case">
+                        <input type="checkbox" class="checkbox_item" required> 
+                        <span class="checkbox_text">Я согласен с условиями обработки персональных данных </span>
+                    </div>
+                    <button class="button_form">Отправить</button>
+                </form>
+            </div>
+            <img src="img/svg/second_item.svg" alt="second_item" class="second_img">
+        </div>
+    </section>
+
+    <section class="bloc_case slider">
+        <div class="container">
+            <h2 class="title_slider">Наши работы</h2>
+            <div class="item_sliser_conteiner">
+
+                <div class="item_slider">
+                    <div class="img_case">
+                        <img src="img/svg/Alibaba Logo.svg" alt="" class="logo_slider_item">
+                    </div>
+                    <h2 class="text_slider">Самая крупная в Финляндии компания по обработке камня и крупнейший в мире производитель теплоаккумулирующих печей каминов текст пример</h2>
+                    <div class="stats_item">
+                        <h2 class="title_stat">Результат:</h2>
+                        <div class="case_stat">
+                            <div class="item_stat">
+                                <h2 class="stat">+ 85,71%</h2>
+                                <h2 class="text_stat">увеличение количества обращений с рекламы</h2>
+                            </div>
+                            <div class="item_stat">
+                                <h2 class="stat">+ 83,51%</h2>
+                                <h2 class="text_stat">увеличение конверсии</h2>
+                            </div>
+                            <div class="item_stat">
+                                <h2 class="stat">- 50,51%</h2>
+                                <h2 class="text_stat">снижение стоимости за обращение</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="system">
+                        <h2 class="title_system">Системы:</h2>
+                        <div class="logo_system_case">
+                            <img src="img/svg/logo-google-adwords 1.svg" alt="" class="logo_system">
+                            <img src="img/svg/pasted-image-0-12 1.svg" alt="" class="logo_system">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_slider">
+                    <div class="img_case">
+                        <img src="img/svg/Macy's Logo.svg" alt="" class="logo_slider_item">
+                    </div>
+                    <h2 class="text_slider">Самая крупная в Финляндии компания по обработке камня и крупнейший в мире производитель теплоаккумулирующих печей каминов текст пример</h2>
+                    <div class="stats_item">
+                        <h2 class="title_stat">Результат:</h2>
+                        <div class="case_stat">
+                            <div class="item_stat">
+                                <h2 class="stat">+ 85,71%</h2>
+                                <h2 class="text_stat">увеличение количества обращений с рекламы</h2>
+                            </div>
+                            <div class="item_stat">
+                                <h2 class="stat">+ 83,51%</h2>
+                                <h2 class="text_stat">увеличение конверсии</h2>
+                            </div>
+                            <div class="item_stat">
+                                <h2 class="stat">- 50,51%</h2>
+                                <h2 class="text_stat">снижение стоимости за обращение</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="system">
+                        <h2 class="title_system">Системы:</h2>
+                        <div class="logo_system_case">
+                            <img src="img/svg/logo-google-adwords 1.svg" alt="" class="logo_system">
+                            <img src="img/svg/pasted-image-0-12 1.svg" alt="" class="logo_system">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bloc_case footer">
+        <div class="container">
+            <div class="main_info">
+                <img src="img/svg/logo 2.png" alt="" class="logo">
+                <h2 class="politic_confidentiality">Политика<br> конфиденциальности</h2>
+                <button class="foot_button">Обратная связь</button>
+            </div>
+            <div class="info">
+                <h2 class="title">Информация</h2>
+                <h2 class="text">Главная</h2>
+                <h2 class="text">Услуги</h2>
+                <h2 class="text">Наши работы</h2>
+                <h2 class="text">Контакты</h2>
+            </div>
+            <div class="servise_foot">
+                <h2 class="title">Услуги</h2>
+                <h2 class="text">Реклама в интернете</h2>
+                <h2 class="text">Дизайн вывесок и рекламы</h2>
+                <h2 class="text">Дизайн сайтов на Тильде</h2>
+                <h2 class="text">СММ</h2>
+            </div>
+        </div>
+        <div class="end_bloc">
+            <h2 class="end_txt">© 2021 Все права защиены</h2>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

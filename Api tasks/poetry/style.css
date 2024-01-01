@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f0cd9f;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container {
+  max-width: 1000px;
+  width: 100%;
+}
+header .container .head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .container .head .head_item_img {
+  width: 40px;
+  height: 40px;
+}
+header .container .head nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+header .container .head nav .head_item {
+  display: inline;
+}
+header .container .head nav .head_item .head_item_text{
+  font-size: 18px;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+main .container {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .container .mid_case .mid_case_fon {
+  background-image: url(./fon3.jpg);
+  width: 100%;
+  height: 200px;
+  left: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .mid_case .mid_case_fon h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+main .main_case {
+  margin-top: 20px;
+}
+main .main_case h2 {
+  margin-top: 30px;
+  font-size: 32px;
+}
+main .main_case p {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #bfab90;
+  justify-content: center;
+  display: flex;
+}
+footer .conteiner {
+  margin-top: 20px;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  display: flex;
+}
+footer .conteiner .inf {
+  display: flex;
+  flex-direction: column;
+}
+footer .conteiner .inf .it {
+  font-size: 16px;
+  margin-top: 10px;
+}
+footer .conteiner .disclamer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+footer .conteiner .disclamer .itt {
+  font-size: 18px;
+}
+footer .conteiner .disclamer .mas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+footer .conteiner .disclamer .mas .icon {
+  width: 40px;
+  height: 40px;
+}
