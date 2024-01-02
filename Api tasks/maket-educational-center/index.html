@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/index.css">
     <title>Оброзовательный центр EMCO</title>
 </head>
 <body>
     
     <header>
         <div class="container">
-            <div class="address_case">
+            <div class="address">
                 <div class="address_svg_text">
                     <svg class="address_svg" xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
                         <path d="M5.5 0C2.46724 0 0 2.48566 0 5.54107C0 6.54694 0.447765 7.62875 0.466529 7.67438C0.611147 8.02021 0.8965 8.55737 1.10226 8.87223L4.87332 14.6287C5.02765 14.8647 5.25606 15 5.5 15C5.74394 15 5.97235 14.8647 6.12668 14.6291L9.89806 8.87223C10.1041 8.55737 10.3892 8.02021 10.5338 7.67438C10.5526 7.62907 11 6.54726 11 5.54107C11 2.48566 8.53276 0 5.5 0ZM9.93721 7.42145C9.80812 7.73142 9.5425 8.23109 9.35776 8.51336L5.58638 14.2702C5.51197 14.384 5.48835 14.384 5.41394 14.2702L1.64256 8.51336C1.45782 8.23109 1.19221 7.73109 1.06312 7.42112C1.05762 7.40776 0.647059 6.41199 0.647059 5.54107C0.647059 2.84518 2.82409 0.65189 5.5 0.65189C8.17591 0.65189 10.3529 2.84518 10.3529 5.54107C10.3529 6.4133 9.94141 7.41167 9.93721 7.42145Z" fill="#E2231A"/>
@@ -34,8 +34,9 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr class="header_line">
             <div class="maim_header_case">
+
                 <div class="logo_search">
                     <a class="link_icon" href="#"><img class="logo_img" src="./img/logo/emco_logo_1-1 1.svg"></a>
                     <form>
@@ -44,6 +45,7 @@
                         </div>
                     </form>                    
                 </div>
+
                 <div class="button_head">
                     <div class="button_img_name">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
@@ -73,6 +75,7 @@
                         <h2 class="title_but">Связаться с нами</h2>
                     </div>
                 </div>
+                
             </div>
             <hr>
             <nav class="menu">
@@ -106,74 +109,77 @@
             </nav>
         </div>        
     </header>
-    <main class="container">
-        <div class="main">
-            <h1 class="main_text">УЧЕБНЫЙ ЦЕНТР НА ОСНОВЕ ООО «СУР»</h1>
-        </div>
-        <aside class="aside">
-            <div class="aside_item">Документы</div>
-            <div class="aside_item">Общие сведения</div>
-            <div class="aside_item">Образование</div>
-            <div class="aside_item">Прием в учебный центр</div>
-            <div class="aside_item">Структура и органы управления образовательной организацией</div>
-            <div class="aside_item">Образовательные стандарты</div>
-            <div class="aside_item">Материально-техническое обеспечение и оснащенность образовательного процесса</div>
-            <div class="aside_item_type_two">Платные образовательные услуги</div>
-            <div class="aside_item_type_two">Финансово-хозяйственная деятельность</div>
-            <div class="aside_item_type_two">Вакантные места для приема (перевода) обучающихся</div>
-            <div class="aside_item_type_two">Доступная среда</div>
-            <div class="aside_item_type_two">Международное сотрудничество</div>
-            <div class="button_aside_one">
-                <h2 class="button_aside_one_text">Свернуть</h2>
-                <img class="button_aside_svg" src="img/icons/arrow_two.svg"> 
-                <hr>
-            </div>           
-            <div class="button_aside_two">
-                <h2 class="button_aside_one_text">Развернуть</h2>
-                <img class="button_aside_svg" src="img/icons/arrow_one.svg ">
-                <hr>
+    
+    <main>
+        <div class="container">
+            <div class="main">
+                <h1 class="main_text">УЧЕБНЫЙ ЦЕНТР НА ОСНОВЕ ООО «СУР»</h1>
             </div>
-        </aside>
+            <aside class="aside">
+                <div class="aside_item">Документы</div>
+                <div class="aside_item">Общие сведения</div>
+                <div class="aside_item">Образование</div>
+                <div class="aside_item">Прием в учебный центр</div>
+                <div class="aside_item">Структура и органы управления образовательной организацией</div>
+                <div class="aside_item">Образовательные стандарты</div>
+                <div class="aside_item">Материально-техническое обеспечение и оснащенность образовательного процесса</div>
+                <div class="aside_item_type_two">Платные образовательные услуги</div>
+                <div class="aside_item_type_two">Финансово-хозяйственная деятельность</div>
+                <div class="aside_item_type_two">Вакантные места для приема (перевода) обучающихся</div>
+                <div class="aside_item_type_two">Доступная среда</div>
+                <div class="aside_item_type_two">Международное сотрудничество</div>
+                <div class="button_aside_one">
+                    <h2 class="button_aside_one_text">Свернуть</h2>
+                    <img class="button_aside_svg" src="img/icons/arrow_two.svg"> 
+                    <hr>
+                </div>           
+                <div class="button_aside_two">
+                    <h2 class="button_aside_one_text">Развернуть</h2>
+                    <img class="button_aside_svg" src="img/icons/arrow_one.svg ">
+                    <hr>
+                </div>
+            </aside>
 
-        <div class="next_bloc_main">
-            <div class="main_info">
-                <h2 class="title">Добро пожаловать на наш официальный сайт!</h2>
-                <p class="min_text">На нашем сайте можно узнать о самых важных событиях нашего учебного центра. 
-                    Ждём Ваши отзывы и пожелания!
-                    </p>
-                <p class="min_text">С большим интересом будут восприняты предложения по улучшению информационного содержания сайта.</p>
-                <p class="min_text">Благодарим Вас за посещение сайта!</p>
-            </div>
-            <div class="news">
-                <h2 class="title_news">Добро пожаловать на наш официальный сайт!</h2>
-                <template>
-                    <div class="news_items">
-                        <img class="news_img">
-                        <div class="news_box">
-                            <h2 class="title_img"></h2>
-                            <p class="news_text"></p>
-                            <div class="news_box_but_looked">
-                                <div class="news_box_looked">
-                                    <img src="" class="news_box_looked_svg">
-                                    <h3 class="news_box_text"></h3>
-                                </div>
-                                <div class="news_box_but">
-                                    <h3 class="news_box_text"></h3>
-                                    <hr class="line_news_box">
+            <div class="next_bloc_main">
+                <div class="main_info">
+                    <h2 class="title">Добро пожаловать на наш официальный сайт!</h2>
+                    <p class="min_text">На нашем сайте можно узнать о самых важных событиях нашего учебного центра. 
+                        Ждём Ваши отзывы и пожелания!
+                        </p>
+                    <p class="min_text">С большим интересом будут восприняты предложения по улучшению информационного содержания сайта.</p>
+                    <p class="min_text">Благодарим Вас за посещение сайта!</p>
+                </div>
+                <div class="news">
+                    <h2 class="title_news">Добро пожаловать на наш официальный сайт!</h2>
+                    <template>
+                        <div class="news_items">
+                            <img class="news_img">
+                            <div class="news_box">
+                                <h2 class="title_img"></h2>
+                                <p class="news_text"></p>
+                                <div class="news_box_but_looked">
+                                    <div class="news_box_looked">
+                                        <img src="" class="news_box_looked_svg">
+                                        <h3 class="news_box_text"></h3>
+                                    </div>
+                                    <div class="news_box_but">
+                                        <h3 class="news_box_text"></h3>
+                                        <hr class="line_news_box">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </template>
+                    <div class="news_button_nev_item">
+                        <h3 class="news_button_nev_item_text">Посмотреть еще новости</h3>
                     </div>
-                </template>
-                <div class="news_button_nev_item">
-                    <h3 class="news_button_nev_item_text">Посмотреть еще новости</h3>
-                </div>
-            </div>   
+                </div>   
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer">
+        <div class="container">
             <div class="first_box">
                 <h4 class="footer_text_">Copyright © 2022 ООО «СУР»</h4>
                 <nav class="menu">

@@ -1,6 +1,8 @@
-.address_case{
-    display: flex;
-    justify-content: space-around;
+.address{
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    padding: 18px;
     .address_svg_text{
         display: flex;
         justify-content: space-around;
@@ -20,7 +22,7 @@
     .contacts{
         display: flex;
         justify-content: space-around;
-        @extend .address_svg_text;
+        align-items: center;
     }
     .indentation_case_one{
         margin-right: 14px;
@@ -29,3 +31,17 @@
         margin-left: 14px;
     }
 } 
+
+.header_line{
+    width: 100%;
+    height: 1px;
+    background: #DFDFDF;
+}
+
+.maim_header_case{
+    display: flex;
+    .logo_search{
+        display: flex;
+        align-items: center;
+    }
+}
