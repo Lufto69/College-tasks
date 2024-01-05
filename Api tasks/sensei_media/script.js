@@ -1,4 +1,4 @@
-//Получение контеинера
+//Получение контеинера 
 const Cont = document.querySelector('#container');
 //Получение темплейт
 const Template = document.querySelector('#item_one');
