@@ -1,16 +1,7 @@
 *{
   font-family: 'Inter', sans-serif;
-  margin: 0 auto;  
-}
-
-@media (max-width:400px) {
-.my-short-info{
-  align-items: flex-start;  
-  display: flex;
-  justify-content: center;  
-  padding: 10px;
-  flex-direction: column;
-}
+  margin: 0;
+  padding: 0;
 }
 html{
   scroll-behavior: smooth; 
@@ -46,7 +37,9 @@ display: flex;
   margin-right: 20px;  
 }
 .my-name{
-  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .my-info{
   margin-top: 50px;
@@ -123,7 +116,7 @@ display: flex;
 }
 .futer{
   display: flex;
-  margin-top: 70px;
+  margin-top: 20px;
   background-color: #ACACAC;
 }
 .bread{
@@ -196,4 +189,7 @@ display: flex;
 }
 .next-button {
   right: 10px;
+}
+.map{
+  margin-top: 30px;
 }

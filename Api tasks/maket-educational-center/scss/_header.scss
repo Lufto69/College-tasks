@@ -94,6 +94,7 @@ header{
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
+            @include button_animation;
         }
     }
 }

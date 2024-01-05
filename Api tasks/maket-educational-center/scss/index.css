@@ -1,4 +1,8 @@
 @import "../fonts/stylesheet.css";
+.cursor_hover {
+  cursor: pointer;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -205,6 +209,11 @@ header {
   font-style: normal;
   font-weight: 400;
 }
+.maim_header_case .button_head .but:active {
+  transition: all 0.2s;
+  background-color: #cc3129;
+  box-shadow: 0px 10px 50px 0px rgba(140, 140, 140, 0.5);
+}
 
 .menu {
   padding: 33px 0px;
@@ -376,6 +385,11 @@ aside .no_none {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+}
+.next_bloc_main .news_button:active {
+  transition: all 0.2s;
+  background-color: #cc3129;
+  box-shadow: 0px 10px 50px 0px rgba(140, 140, 140, 0.5);
 }
 
 .first_box {

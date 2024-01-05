@@ -48,7 +48,7 @@
                     </form>                    
                 </div>
 
-                <div class="button_head">
+                <div class="button_head cursor_hover">
                     <div class="button_img_name">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                             <path d="M9.17123 7.11569C9.0388 7.11569 8.93164 7.22286 8.93164 7.35529C8.93164 7.48772 9.0388 7.59488 9.17123 7.59488H9.97373C10.1062 7.59488 10.2133 7.48772 10.2133 7.35529C10.2133 7.22286 10.1062 7.11569 9.97373 7.11569H9.17123Z" fill="#1D1D1B"/>
@@ -69,7 +69,7 @@
                         </svg>
                         <h2 class="title_but">Карта сайта</h2>
                     </div>
-                    <div class="button_img_name">
+                    <div class="button_img_name cursor_hover">
                         <img src="./img/icons/Vector.svg">
                         <h2 class="title_but">Версия для слабовидящих</h2>
                     </div>
@@ -81,27 +81,27 @@
             <hr class="header_line">
 
             <nav class="menu">
-                <div class="menu_item">
+                <div class="menu_item cursor_hover">
                     О НАС
                 </div>
-                <select>
+                <select class="menu_item cursor_hover">
                     <option selected>Информация</option>
                 </select>
-                <select>
+                <select class="menu_item cursor_hover">
                     <option selected>Руководство и педагогический состав</option>
                     <option>Руководство</option>
                     <option>Педагогический состав</option>
                 </select>
-                <div class="menu_item">
+                <div class="menu_item cursor_hover">
                     Контакты
                 </div>
-                <div class="menu_item">
+                <div class="menu_item cursor_hover">
                     Новости
                 </div>
-                <div class="menu_item">
+                <div class="menu_item cursor_hover">
                    Дистанционные материалы
                 </div>
-                <div class="menu_item">
+                <div class="menu_item cursor_hover">
                     Электронная библиотека
                 </div>
             </nav>
@@ -115,13 +115,13 @@
             </div>
             <div class="box_mid">
                 <aside>
-                    <div class="aside_item">Документы</div>
-                    <div class="aside_item">Общие сведения</div>
-                    <div class="aside_item">Образование</div>
-                    <div class="aside_item">Прием в учебный центр</div>
-                    <div class="aside_item">Структура и органы управления образовательной организацией</div>
-                    <div class="aside_item">Образовательные стандарты</div>
-                    <div class="aside_item">Материально-техническое обеспечение и оснащенность образовательного процесса</div>
+                    <div class="aside_item cursor_hover">Документы</div>
+                    <div class="aside_item cursor_hover">Общие сведения</div>
+                    <div class="aside_item cursor_hover">Образование</div>
+                    <div class="aside_item cursor_hover">Прием в учебный центр</div>
+                    <div class="aside_item cursor_hover">Структура и органы управления образовательной организацией</div>
+                    <div class="aside_item cursor_hover">Образовательные стандарты</div>
+                    <div class="aside_item cursor_hover">Материально-техническое обеспечение и оснащенность образовательного процесса</div>
                     
                     <div class="button" id="but_one">
                         Развернуть
@@ -129,11 +129,11 @@
                     </div> 
 
                     <div id="next_as" class="none">
-                        <div class="aside_item">Платные образовательные услуги</div>
-                        <div class="aside_item">Финансово-хозяйственная деятельность</div>
-                        <div class="aside_item">Вакантные места для приема (перевода) обучающихся</div>
-                        <div class="aside_item">Доступная среда</div>
-                        <div class="aside_item">Международное сотрудничество</div>
+                        <div class="aside_item cursor_hover">Платные образовательные услуги</div>
+                        <div class="aside_item cursor_hover">Финансово-хозяйственная деятельность</div>
+                        <div class="aside_item cursor_hover">Вакантные места для приема (перевода) обучающихся</div>
+                        <div class="aside_item cursor_hover">Доступная среда</div>
+                        <div class="aside_item cursor_hover">Международное сотрудничество</div>
                     </div> 
                     
                     <div class="button none" id="but_two">
@@ -152,25 +152,27 @@
                         <p class="min_text">С большим интересом будут восприняты предложения по улучшению информационного содержания сайта.</p>
                         <p class="min_text">Благодарим Вас за посещение сайта!</p>
                     </div>
-                    <div class="news" id="container">
+                    <div class="news">
                         <h2 class="news_title">Наши новости</h2>
-                        <template id="news_it">
-                            <div class="news_items">
-                                <img class="news_img" src="img/picture/news_item.png">
-                                <div class="news_box">
-                                    <h2 class="title_img">Ежегодная конференция</h2>
-                                    <p class="news_text">Lorem ipsum dolor sit amet consectetur. Semper at vulputate lacus pharetra convallis urna. Etiam ante nulla condimentum fermentum diam. Fames sit dictum facilisi iaculis porttitor scelerisque. Libero commodo dui in lacinia aliquam maecenas. Lobortis est eget non maecenas...</p>
-                                    <div class="news_box_but_looked">
-                                        <div class="news_box_looked">
-                                            <img src="img/icons/Vector.svg" class="news_box_looked_svg">
-                                            <h3 class="news_box_text">1,325</h3>
+                        <div id="container">
+                            <template id="news_it">
+                                <div class="news_items">
+                                    <img class="news_img" src="img/picture/news_item.png">
+                                    <div class="news_box">
+                                        <h2 class="title_img">Ежегодная конференция</h2>
+                                        <p class="news_text">Lorem ipsum dolor sit amet consectetur. Semper at vulputate lacus pharetra convallis urna. Etiam ante nulla condimentum fermentum diam. Fames sit dictum facilisi iaculis porttitor scelerisque. Libero commodo dui in lacinia aliquam maecenas. Lobortis est eget non maecenas...</p>
+                                        <div class="news_box_but_looked">
+                                            <div class="news_box_looked">
+                                                <img src="img/icons/Vector.svg" class="news_box_looked_svg">
+                                                <h3 class="news_box_text">1,325</h3>
+                                            </div>
+                                            <h3 class="news_box_text news_txt cursor_hover">Читать дальше</h3>
                                         </div>
-                                        <h3 class="news_box_text news_txt">Читать дальше</h3>
                                     </div>
                                 </div>
-                            </div>
-                            
-                        </template>
+                                
+                            </template>
+                        </div>
                         <button class="news_button">Посмотреть еще новости</button>
                     </div>   
                 </div>
@@ -184,18 +186,18 @@
                 <h4 class="footer_text">Copyright © 2022 ООО «СУР»</h4>
                 <nav>
                     <div class="menu">
-                        <div class="menu_item">
+                        <div class="menu_item cursor_hover">
                             О НАС
                         </div>
-                        <select class="menu_item">
+                        <select class="menu_item cursor_hover">
                             <option selected>Информация</option>
                         </select>
-                        <select class="menu_item">
+                        <select class="menu_item cursor_hover">
                             <option selected>Руководство и педагогический состав</option>
                             <option>Руководство</option>
                             <option>Педагогический состав</option>
                         </select>
-                        <div class="menu_item">
+                        <div class="menu_item cursor_hover">
                             Контакты
                         </div>
                     </div>
@@ -204,8 +206,8 @@
             <div class="second_box">
                 <h4 class="footer_text">При перепечатке текстовой информации и фотографий ссылка на сайт обязательна</h4>
                 <div class="footer_button_box">
-                    <h3 class="footer_button_text">Связаться с нами</h3>
-                    <h3 class="footer_button_text">Сведения об образовательной организации</h3>
+                    <h3 class="footer_button_text cursor_hover">Связаться с нами</h3>
+                    <h3 class="footer_button_text cursor_hover">Сведения об образовательной организации</h3>
                 </div>
             </div>
         </div>
