@@ -4,6 +4,10 @@
     margin-top: 25px;
 }
 
+.main{
+    border-radius: 4px;
+}
+
 aside{
     max-width: 360px;
     width: 100%;
@@ -51,6 +55,7 @@ aside{
 .next_bloc_main{
     
     .main_info{
+        padding-right: 30px;
         .title{
             color: $black-text;
             font-size: 30px;
@@ -145,5 +150,122 @@ aside{
             font-weight: 400;
             @include button_animation;
         }
+    }
+}
+
+@media (max-width:$mw4) {
+    .main{
+        margin-top: 0px;
+        font-size: 40px;
+    }
+
+    .next_bloc_main .main_info .title{
+        font-size: 26px;
+    }
+
+    .next_bloc_main .main_info .min_text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: $mw3){
+    aside{
+        display: none;
+    }
+
+    .next_bloc_main .main_info{
+        padding: 0;
+    }
+
+    .next_bloc_main > .news{
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .main{
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .next_bloc_main .main_info .title{
+        font-size: 21px;
+    }
+
+    .next_bloc_main .main_info .min_text{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: $mw2){
+    .main{
+        margin-top: 10px;
+        font-size: 23px;
+    }
+
+    .next_bloc_main .main_info .title{
+        font-size: 19px;
+    }
+
+    .next_bloc_main .main_info .min_text{
+        font-size: 14px;
+    }
+
+    .next_bloc_main .news_title {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: $mw1){
+    .main{
+        padding: 60px 0px;
+        margin-top: 5px;
+        font-size: 23px;
+    }
+
+    .next_bloc_main .news_title {
+        font-size: 16px;
+    }
+
+    .next_bloc_main .main_info .title{
+        font-size: 16px;
+    }
+
+    .next_bloc_main .main_info .min_text{
+        font-size: 14px;
+    }
+
+    .news_img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .next_bloc_main .news_items .news_box{
+        padding: 0 0 0 10px;
+    }
+
+    .next_bloc_main .news_items .news_box .title_img{
+        font-size: 14px;
+    }
+
+    .next_bloc_main .news_items .news_box .news_text{
+        font-size: 11px;
+        line-height: 13px;
+        padding-top: 10px;
+    }
+
+    .news_box_looked_svg{
+        width: 15px;
+    }
+    .next_bloc_main .news_items .news_box .news_box_but_looked .news_box_text{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: $min-width) {
+    .news_img{
+        display: none;
+    }
+
+    .next_bloc_main .news_items .news_box{
+        padding: 0px;
     }
 }

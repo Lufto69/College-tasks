@@ -50,6 +50,11 @@
     padding: 0;
     border: 0;
   }
+  select,
+  option{
+    background: none;
+    border: 0px;
+  }
   a,
   a:visited {
     text-decoration: none;
@@ -94,4 +99,5 @@
     align-items: center;
     max-width: 1170px;
     width: 100%;
+    margin: 0 15px;
   }
