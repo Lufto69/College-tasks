@@ -1,0 +1,111 @@
+.main_contacts{
+    background-image: url(../img/picture/contacts_picture.png);
+}
+.next_bloc_main .inner-contacts{
+    padding: 15px 0px 0px 20px;
+    &__subtext{
+        margin-top: 25px;
+        color: rgba(29, 29, 27, 0.50);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        &:first-child{
+            margin-top: 20px;
+        }
+    }
+    &__majortext{
+        margin-top: 15px;
+        color: #1D1D1B;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+.map{
+    margin-top: 45px;
+    
+    &__inner{
+        display: block;
+        margin: 0 auto;
+        width: 96%;
+    }
+}
+.form-wrapper{
+    &__inner_text{
+        margin-top: 30px;
+        color: #373737;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        .form-wrapper__item{
+            resize: none;
+            border: 1px solid #D1D1D1;
+            background: #FFF;
+            padding: 21px 19px;
+            color: #1D1D1B;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            margin-top: 10px;
+            &:first-child{
+                margin-top: 20px;
+            }
+        }
+        .form-wrapper__button{
+            margin-top: 20px;
+            width: 155px;
+            padding: 17px 39px;
+            background-color: $button;
+            color: $white-text;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .form-wrapper__select{
+            padding-right: 55px;
+        }
+    }
+}
+
+@media (max-width: $mw2) {
+    .next_bloc_main .inner-contacts{
+        padding: 0;
+    }
+    .next_bloc_main .inner-contacts__subtext{
+        font-size: 15px;
+    }
+    .next_bloc_main .inner-contacts__majortext{
+        font-size: 16px;
+    }
+    .form-wrapper form .form-wrapper__item{
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: $mw1) {
+    .next_bloc_main .inner-contacts__subtext{
+        font-size: 11px;
+    }
+    .next_bloc_main .inner-contacts__majortext{
+        font-size: 12px;
+    }
+    .map__inner{
+        height: 200px;
+    }
+    .form-wrapper form .form-wrapper__item{
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+    label{
+        font-size: 12px;
+    }
+}

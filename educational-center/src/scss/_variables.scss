@@ -1,0 +1,47 @@
+//Font
+$font-gothem: 'Gotham Pro';
+
+//Color
+
+$black-text: #1D1D1B;
+$white-text: #FFFFFF;
+$border: 1px solid rgba(226, 35, 26, 0.50);
+$button: #E2231A;
+
+//Breakpoints
+
+$min-width: 320px;
+$mw1: 576px;
+$mw2: 768px;
+$mw3: 992px;
+$mw4: 1200px;
+$mw5: 1600px;
+
+//Animation
+
+@mixin button_animation{
+    &:active{
+    transition: all 0.2s;
+    background-color: #cc3129;
+    box-shadow: 0px 10px 50px 0px rgba(140, 140, 140, 0.5);
+    }
+}
+
+.cursor_hover{
+    cursor: pointer;
+    &:active{
+        color: #818181;
+    }
+}
+@media (max-width: $mw4) {
+    .container{
+        margin: 0;
+        padding: 0 15px;
+    }
+}
+@media (max-width: $mw1) {
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+}
