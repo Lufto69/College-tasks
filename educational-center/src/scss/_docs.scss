@@ -69,12 +69,13 @@
     }
 }
 
-// .none{
-//     display: none;
-// }
-// .op{
-//     display: none;
-// }
+.form-wraper__but_case .op, .op{
+    display: none;
+}
+
+.form-wraper__but_case .cl, .cl{
+    display: block;
+}
 
 .docs-wraper{
     .docs-item{
@@ -100,3 +101,5 @@
         }
     }
 }
+
+

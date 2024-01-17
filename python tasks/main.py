@@ -2,8 +2,8 @@ import random
 import turtle
 from turtle import *
 import math
-import cv2
-import numpy as np
+# import cv2
+# import numpy as np
 
 
 def draw_square(num):

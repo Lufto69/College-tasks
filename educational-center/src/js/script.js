@@ -6,6 +6,7 @@ barba.init({
         afterEnter() {
           aside(),
           menu(),
+          op_docs(),
           news();
         }
       }],
@@ -100,4 +101,23 @@ function news(){
     cont.append(create);
 }
 
+function op_docs(){
+  window.addEventListener('DOMContentLoaded', () => {
+    const but_o = document.querySelector("#but_op"),
+    but_t = document.querySelector("#but_cl"),
+    next_as = document.querySelector("#none_input");
+  
+    but_o.addEventListener('click', () => {
+      console.log("gftd"),
+      next_as.classList.toggle("cl"),
+      but_o.classList.toggle("op"),
+      but_t.classList.toggle("cl");
+    });
+    but_t.addEventListener('click', () => {
+      next_as.classList.toggle("cl"),
+      but_o.classList.toggle("op"),
+      but_t.classList.toggle("cl");
+    })
+  })
 
+}
