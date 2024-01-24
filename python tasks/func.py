@@ -2,20 +2,23 @@ import random
 import turtle
 from turtle import *
 import math
-# import cv2
+import cv2
 # import numpy as np
 import os
 
-
-class MyClass:
-
-    def __init__(self, name):
-        self.name = name
-
-    def sayHello(self):
-        print("Hello, " + self.name)
+import sqlite3
 
 
-obj = MyClass("Alice")
+class Foo(object):
+    obj = 0
 
-obj.sayHello()
+    def __new__(cls, *dt, **mp):
+        obj = 1
+
+    def __init__(self):
+        self.obj = 2
+
+
+o = Foo()
+
+print(o.obj)
