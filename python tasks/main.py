@@ -4,16 +4,68 @@ from turtle import *
 import math
 # import cv2
 # import numpy as np
+import math
 
 
-def draw_square(num):
-    f = 0
-    for i in range(num):
-        f = f * i
+class Shape:
+    def __init__(self, name):
+        self.name = name
+
+    def area(self):
+        print(f"Имя фигуры: {self.name}. Площадь фигуры: неизвестно")
 
 
+class Rectangle(Shape):
+    def __init__(self, a, b):
+        super().__init__("Прямоугольник")
+        self.a = a
+        self.b = b
 
-print(draw_square(5))
+    def area(self):
+        print(f"Имя фигуры: {self.name}. Площадь фигуры: {self.a * self.b}")
+
+
+class Circle(Shape):
+    def __init__(self, r):
+        super().__init__("Окружность")
+        self.r = r
+
+    def area(self):
+        print(f"Имя фигуры: {self.name}. Площадь фигуры: {math.pi * self.r ** 2}")
+
+
+class CurvedTrapezoid(Shape):
+    def __init__(self):
+        super().__init__("Криволинейная трапеция")
+
+
+def area_of_shape(shape):
+    shape.area()
+
+
+rectangle = Rectangle(2, 5)
+area_of_shape(rectangle)
+
+circle = Circle(5)
+area_of_shape(circle)
+
+curved_trapezoid = CurvedTrapezoid()
+area_of_shape(curved_trapezoid)
+
+
+class gamer:
+    def it(x):
+        print(x)
+class diz:
+    def it(x):
+        print(x)
+class prog:
+    def it(x):
+        print(x)
+
+gamer.it("айтишник")
+diz.it("айтишник")
+prog.it("айтишник")
 
 # mas = np.random.random_integers(0, 100, 10)
 # print(mas)
