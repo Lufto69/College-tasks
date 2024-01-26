@@ -1,6 +1,7 @@
-.fs{
+.title{
     color: $white;
-    font-weight: 400;
+    font-weight: bold;
+    font-style: normal;
     &_64{
         font-size: 64px;
     }
@@ -12,6 +13,7 @@
     }
     &_18{
         font-size: 18px;
+        font-weight: 300;
     }
     &_16{
         font-size: 16px;

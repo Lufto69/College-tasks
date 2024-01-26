@@ -1,9 +1,12 @@
-//Font
+//fonts
+@import "../fonts/stylesheet.css";
 
-//Variable
+//variable
 @import "base/_variables.scss";
+@import "base/text";
 
-//Обнуление
+//обнуление
 @import "base/_style.scss";
 
 //element
+@import "blocks/prpmo";
