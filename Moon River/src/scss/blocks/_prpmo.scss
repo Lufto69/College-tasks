@@ -3,7 +3,8 @@ header{
 }
 
 .promo{
-
+    position: relative;
+    height: 100vh;
     &__interfase{
         width: 208px;
         display: flex;
@@ -37,12 +38,43 @@ header{
 
 
     &_overlay-menu{
-        width: 100vw;
+        width: 40vw;
         height: 100vh;
         position: absolute;
         z-index: -1;
         top: 0;
-        right: -60%;
+        right: 0;
         background-color: $gray-black;
+    }
+
+
+    &__offer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    &__img{
+        margin-left: 94px;
+    }
+    &__title{
+        color: $gray-black;
+        margin-top: 12px;
+    }
+    &__subtitle{
+        position: relative;
+        color: $gray-black;
+        font-style: italic;
+        font-family: $font-subtitle;
+        margin-top: 50px;
+        &::after{
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 130px;
+            height: 1px;
+            background-color: $gray-black;
+        }
     }
 }

@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+let gulp = require("gulp");
 const browserSync = require("browser-sync");
 const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");

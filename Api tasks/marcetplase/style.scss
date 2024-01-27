@@ -1,0 +1,100 @@
+header, main, section, footer{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &-pr{
+        align-items: center;
+    }
+}
+
+.promo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+    }
+    nav{
+        display: flex;
+    }
+    &__nav-item{
+        margin: 0 20px;
+        cursor: pointer;
+    }
+}
+
+.filtrs{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    &__item{
+        padding: 5px 18px;
+        background-color: rgb(186, 186, 186);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+
+.products{
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__item{
+        margin-top: 20px;
+        width: 30%;
+        position: relative;
+        cursor: pointer;
+        &-img{
+            width: 99%;
+        }
+        &-cont{
+            width: 100%;
+            height: 70px;
+            background-color: rgba($color: #212121, $alpha: .6);
+            position: absolute;
+            bottom: 0;
+        }
+        &-title{
+            margin: 10px 15px 0 15px;
+            font-size: 18px;
+            color: #f1f1f1;
+        }
+        &-subtitle{
+            margin: 10px 15px 0 15px;
+            font-size: 14px;
+            color: #d3d3d3;
+        }
+    }
+}
+
+.footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    .map-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .filtrs-foot{
+        flex-direction: column;
+        justify-content: center;
+        .ft{
+            margin: 10px;
+        }
+    }
+}
