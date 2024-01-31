@@ -1,0 +1,28 @@
+.language_active.language_active{
+    color: $gray-black;
+}
+
+.burger_active{
+    span{
+        margin-top: 5px;
+        transform: rotate(45deg);
+        &:last-child{
+            transform: rotate(-45deg);
+            margin-top: -2px;
+        }
+    }
+    .bg-i{
+        display: none;
+    }
+}
+.logo_menu-active{
+    display: none;
+}
+.menu-active{
+    z-index: 1;
+    width: 100%;
+}
+
+.menu-wraper_active{
+    display: none;
+}

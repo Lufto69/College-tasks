@@ -1,0 +1,16 @@
+.products{
+    .containe{
+        display: flex;
+        flex-direction: row;
+    }
+    &_item{
+        text-align: center;
+        width: 710px;
+        height: 587px;
+        margin: 20px 10px;
+        background:  url("../img/pictue/background/men.png") no-repeat center center;
+        &:nth-child(2){
+            background:  url("../img/pictue/background/women.png") no-repeat center center;
+        }
+    }
+}

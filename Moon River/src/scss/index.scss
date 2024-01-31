@@ -3,10 +3,17 @@
 @import "../fonts/Segoe.css";
 //variable
 @import "base/_variables.scss";
-@import "base/text";
 
 //обнуление
 @import "base/_style.scss";
 
+//переиспользуемые элементы
+@import "blocks/text";
+@import "blocks/prise";
+
 //element
 @import "blocks/prpmo";
+@import "blocks/menu";
+@import "blocks/products";
+//animation
+@import "blocks/animation";

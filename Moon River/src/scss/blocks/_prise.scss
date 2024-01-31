@@ -1,0 +1,16 @@
+.prise{
+    &_title{
+        text-transform: uppercase;
+        color: $white;
+    }
+    &_subtitle{
+        color: #C2C2C2;
+        margin-top: 9px;
+    }
+    &_count{
+        margin-top: 9px;
+    }
+    &_promo{
+        text-align: end;
+    }
+}
