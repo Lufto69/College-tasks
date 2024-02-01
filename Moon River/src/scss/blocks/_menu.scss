@@ -89,12 +89,6 @@
         margin-left: 85px;
         .bloc-info:nth-child(2){
             margin-top: 50px;
-            .menu-footer__info_input_wrap{
-                display: flex;
-                justify-content: space-between;
-                padding-bottom: 7px;
-                border-bottom: 1px solid $white;
-            }
         }
         &_title{
             color: $white;
@@ -109,10 +103,6 @@
             img:first-child{
                 margin-right: 20px;
             }
-        }
-        &_input{
-            background-color: $gray-black;
-            color: $white;
         }
     }
 }

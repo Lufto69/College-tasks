@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.min.css">
+    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=6fe690d5-4d2f-4f11-9277-867bfa9b3292&lang=ru_RU"></script> -->
 </head>
 <body>
     <section class="promo">
@@ -143,9 +144,9 @@
                                 </div>
                                 <div class="bloc-info">
                                     <div class="title_14 title_14_book menu-footer__info_title">подпишитесь на новости</div>
-                                    <div class="menu-footer__info_input_wrap">
-                                        <input type="text" placeholder="Введите E-mail" class="title_18 title_18_light menu-footer__info_input">
-                                        <img src="icons/arrow_rignt.svg" alt="arrow_rignt" class="menu-footer__promo-link_img">
+                                    <div class="input_wrap">
+                                        <input type="text" placeholder="Введите E-mail" class="title_18 title_18_light input">
+                                        <img src="icons/arrow_rignt.svg" alt="arrow_rignt" class="input_img">
                                     </div>
                                     <div class="menu-footer__info_icons-wrap">
                                         <img src="img/picture/appstor.png" alt="appstor">
@@ -171,6 +172,21 @@
                 <div class="title_24 products_subtitle">Перейти в раздел</div>
                 <div class="title_64 products_title">Для женщин</div>
             </div>
+        </div>
+    </section>
+
+    <section class="geolocation">
+        <div class="geolocation__wrap">
+
+            <div class="title_48 geolocation__title">Найди<br> бутик около себя</div>
+            <div class="title_18 title_18_light geolocation__subtitle">Введите свой адрес и узнайте о самых ближайших бутиках к вам</div>
+            <div class="input_wrap">
+                <input type="text" placeholder="Введите E-mail" class="title_18 title_18_light input">
+                <img src="icons/arrow_rignt.svg" alt="arrow_rignt" class="input_img">
+            </div>
+        </div>
+        <div class="geolocation__wrap_map">
+            <div id="map" style="width: 100%; height: 100%"></div>
         </div>
     </section>
 

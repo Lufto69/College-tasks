@@ -2,15 +2,26 @@
     .containe{
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
     &_item{
         text-align: center;
-        width: 710px;
-        height: 587px;
+        max-width: 710px;
+        width: 100%;
+        height: auto;
         margin: 20px 10px;
-        background:  url("../img/pictue/background/men.png") no-repeat center center;
+        background: url("../img/pictue/background/men.png") no-repeat center center ;
         &:nth-child(2){
             background:  url("../img/pictue/background/women.png") no-repeat center center;
         }
+    }
+    &_subtitle{
+        color: $white;
+        margin-top: 34%;
+    }
+    &_title{
+        color: $white;
+        margin-bottom: 35%;
     }
 }

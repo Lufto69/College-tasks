@@ -1,0 +1,19 @@
+.geolocation{
+    width: 100%;
+    background-color: $gray-black;
+    &__wrap{
+        max-width: 710px;
+        width: 100%;
+        padding: 171px 162px;
+        &_map{
+            max-width: 710px;
+            width: 100%;
+        }
+    }
+    &__title{
+        color: $white;
+    }
+    &__subtitle{
+        color: $white;
+    }
+}
