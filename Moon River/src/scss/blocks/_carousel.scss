@@ -1,0 +1,53 @@
+.carousel{
+    flex-direction: column;
+    background-color: $gray-black;
+    padding: 100px 0;
+    .container{
+        align-items: flex-start;
+    }
+    &_title{
+        color: $white;
+    }
+    &__wraper{
+        margin: 0 auto;
+        margin-top: 80px;
+        &-foot{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 70px;
+        }
+    }
+    &__panel{
+        display: flex;
+        align-items: flex-end;
+        width: 28%;
+        justify-content: space-between;
+        &_arrow{
+            width: 51px;
+            height: 29px;
+        }
+        &_markers-wrap{
+            position: relative;
+            display: flex;
+            
+            
+        }
+        &_markers{
+            position: relative;
+            width: 8px;
+            height: 8px;
+            margin: 0 8px;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                background-color: #656565;
+            }
+        }
+    }
+    
+}

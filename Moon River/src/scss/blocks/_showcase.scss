@@ -1,0 +1,36 @@
+.showcase{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    &__wraper{
+        display: grid;
+        grid-template: repeat(2, 400px) / minmax(200px, 400px) minmax(200px, 600px) minmax(200px, 400px);
+        gap: 20px;
+    }
+    &__wrap_img{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        &-main{
+            background: url("../img/pictue/product/397780CZ__11.png") no-repeat center center ;
+            display: flex;
+            align-items: flex-end;
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+    }
+    &__img{
+        max-width: 260px;
+        object-fit:contain;
+    }
+    &__prise{
+        align-items: flex-start;
+        margin: 20px 30px;
+    }
+}

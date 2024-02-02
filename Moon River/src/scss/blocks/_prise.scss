@@ -1,6 +1,10 @@
 .prise{
     &_title{
         text-transform: uppercase;
+        color: $gray-black;
+    }
+    &_title-white{
+        text-transform: uppercase;
         color: $white;
     }
     &_subtitle{
