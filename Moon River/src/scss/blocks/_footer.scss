@@ -1,0 +1,36 @@
+.footer{
+    width: 100%;
+    background-color: $gray-black;
+    padding: 80px 0;
+    nav{
+        width: 100%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__contacts, .bloc-info{
+        margin-top: 90px;
+    }
+    &__logo{
+        margin-top: 100px;
+    }
+    &__wraper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__title{
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        color: #C2C2C2;
+    }
+}

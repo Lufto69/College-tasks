@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.min.css">
-    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=6fe690d5-4d2f-4f11-9277-867bfa9b3292&lang=ru_RU"></script> -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6fe690d5-4d2f-4f11-9277-867bfa9b3292&lang=ru_RU"></script>
 </head>
 <body>
     <section class="promo">
@@ -176,18 +176,7 @@
     </section>
 
     <section class="geolocation">
-        <div class="geolocation__wrap">
-
-            <div class="title_48 geolocation__title">Найди<br> бутик около себя</div>
-            <div class="title_18 title_18_light geolocation__subtitle">Введите свой адрес и узнайте о самых ближайших бутиках к вам</div>
-            <div class="input_wrap">
-                <input type="text" placeholder="Введите E-mail" class="title_18 title_18_light input">
-                <img src="icons/arrow_rignt.svg" alt="arrow_rignt" class="input_img">
-            </div>
-        </div>
-        <div class="geolocation__wrap_map">
-            <div id="map" style="width: 100%; height: 100%"></div>
-        </div>
+        
     </section>
 
     <section class="showcase">
@@ -274,6 +263,62 @@
         </div>
     </section>
 
+    <section class="news">
+        <div class="news__wrap_img">
+            <img src="img/pictue/background/registration_picture.png" alt="registration_picture" class="news_img">
+        </div>
+        <div class="news__wrap">
+            <div class="news__wrap-item">
+                <div class="title_18 title_18_light news__title">телефон флагманского магазина</div>
+                <a href="tel:+7800456456" class="title_22 news__subtitle">+7 800 456 456</a>
+            </div>
+            <div class="news__wrap-item">
+                <div class="title_18 title_18_light news__title">подпишитесь на новости</div>
+                <div class="input_wrap-min">
+                    <input type="text" placeholder="Введите E-mail" class="title_18 title_18_light input-white">
+                    <img src="icons//arrow_right_black.svg" alt="arrow_rignt" class="input_img">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="title_14 title_14_medium">работа в компании</li>
+                    <li class="title_14 title_14_medium">условия пользования</li>
+                    <li class="title_14 title_14_medium">выходные данные</li>
+                    <li class="title_14 title_14_medium">политика конфиденциальности</li>
+                    <li class="title_14 title_14_medium">карта сайта</li>
+                </ul>
+            </nav>
+
+            <div class="footer__wraper">
+                <img src="img/logo/logo_fff.svg" alt="logo" class="footer__logo">
+                <div class="footer__contacts">
+                    <div class="title_18 title_18_book footer__title">телефон горячей линии</div>
+                    <a href="tel:+7800456456" class="title_18 title_18_light footer__subtitle">+7 800 456 456</a>
+                    <div class="menu-footer__info_icons-wrap">
+                        <img src="icons/facebook.svg" alt="facebook">
+                        <img src="icons/instagram.svg" alt="instagram">
+                    </div>
+                </div>
+                <div class="bloc-info">
+                    <div class="title_18 title_18_book footer__title">подпишитесь на новости</div>
+                    <div class="input_wrap">
+                        <input type="text" placeholder="Введите E-mail" class="title_18 title_18_light input footer__subtitle">
+                        <img src="icons/arrow_rignt.svg" alt="arrow_rignt" class="input_img">
+                    </div>
+                    <div class="menu-footer__info_icons-wrap">
+                        <img src="img/picture/appstor.png" alt="appstor">
+                        <img src="img/picture/googlplay.png" alt="googlplay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
