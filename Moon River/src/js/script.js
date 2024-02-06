@@ -1,3 +1,9 @@
+import JsonFile from '/customization.json';
+
+
+
+OpenOwerlay();
+
 function OpenOwerlay(){
     window.addEventListener('DOMContentLoaded', () => {
         const logo = document.querySelector(".promo__logo"),
@@ -18,34 +24,23 @@ function OpenOwerlay(){
     })
 }
 
-OpenOwerlay();
+ // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [53.401722, 49.494657],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 10
+        });
 
-
-initMap();
-
-async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await ymaps3.ready;
-
-    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-
-    // Иницилиазируем карту
-    const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
-        document.getElementById('map'),
-
-        // Передаём параметры инициализации карты
-        {
-            location: {
-                // Координаты центра карты
-                center: [37.588144, 55.733842],
-
-                // Уровень масштабирования
-                zoom: 10
-            }
-        }
-    );
-
-    // Добавляем слой для отображения схематической карты
-    map.addChild(new YMapDefaultSchemeLayer());
-}
+        map.addChild(new YMapDefaultSchemeLayer({
+            theme: "dark", customization: JsonFile
+        }));
+    }
