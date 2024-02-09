@@ -17,6 +17,8 @@
         max-width: 1440px;
         width: 100%;
         overflow: hidden;
+        scrollbar-width: none;
+        overflow-x: auto;
         &-foot{
             display: flex;
             justify-content: space-between;
@@ -26,6 +28,7 @@
     }
     &__img{
         margin: 0 5px;
+        
     }
 
     &__panel{
