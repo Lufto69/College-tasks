@@ -1,0 +1,60 @@
+@import '_index.scss';
+
+.menu{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__img{
+        height: 80%;
+    }
+    nav{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+    &__reg{
+        display: flex;
+        width: 15%;
+        justify-content: space-around;
+    }
+}
+
+.main{
+    margin-top: 50px;
+    display: flex;
+    
+    &_menu{
+        width: 20%;
+        max-width: 200px;
+        &-item{
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            margin-right: 10px;
+            input{
+                margin: 0 7px;
+            }
+        }
+        &_img{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &_case{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.cards{
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}

@@ -81,6 +81,7 @@ gulp.task(
 		"icons",
 		"html",
 		"images",
+		
 		"styles"
 	)
 );
