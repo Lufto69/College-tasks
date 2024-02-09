@@ -1,3 +1,6 @@
+OpenOwerlay();
+slider();
+//Оверлей меню
 function OpenOwerlay(){
     window.addEventListener('DOMContentLoaded', () => {
         const logo = document.querySelector(".promo__logo"),
@@ -18,34 +21,70 @@ function OpenOwerlay(){
     })
 }
 
-OpenOwerlay();
+//Слайдер
+function slider(){
+  window.addEventListener('DOMContentLoaded', () => {
+    const sliderButtons = document.querySelectorAll(".carousel__panel_arrow"),
+          imegList = document.querySelector(".carousel__wraper");
+
+    sliderButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const derection = button.id === "prev-slide" ? -1 : 1, //
+              scrollAmount = imegList.clientWidth * derection;
+        imegList.scrollBy({left: scrollAmount, behavior: 'smooth'});
+      })
+    })
+  })
+}
 
 
-initMap();
 
-async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await ymaps3.ready;
 
-    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
 
-    // Иницилиазируем карту
-    const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
-        document.getElementById('map'),
 
-        // Передаём параметры инициализации карты
-        {
-            location: {
-                // Координаты центра карты
-                center: [37.588144, 55.733842],
 
-                // Уровень масштабирования
-                zoom: 10
-            }
-        }
-    );
 
-    // Добавляем слой для отображения схематической карты
-    map.addChild(new YMapDefaultSchemeLayer());
+
+
+
+
+
+
+
+ymaps.ready(init);
+function init(){
+    var myMap = new ymaps.Map("map", {
+        center: [53.401722, 49.494657],
+        zoom: 6
+    });
+
+    const layer = new YMapDefaultSchemeLayer({
+        customization: [
+          // Делаем прозрачными все геометрии водных объектов.
+          {
+            tags: {
+              all: ['water']
+            },
+            elements: 'geometry',
+            stylers: [
+              {
+                opacity: 0
+              }
+            ]
+          },
+          // Меняем цвет подписей для всех POI и узлов сети общественного транспорта.
+          {
+            tags: {
+              any: ['poi', 'transit_location']
+            },
+            elements: 'label.text.fill',
+            stylers: [
+              {
+                color: '#0000DD'
+              }
+            ]
+          }
+        ]
+      });
+      map.addChild(layer);
 }

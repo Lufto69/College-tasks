@@ -9,3 +9,15 @@
     color: $white;
 }
 
+
+.input_wrap-min{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $gray-black;
+    max-width: 280px;
+}
+.input-white{
+    background-color: $white;
+    color: #C2C2C2;
+}
