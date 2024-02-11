@@ -25,36 +25,99 @@
     display: flex;
     
     &_menu{
+        margin-top: 30px;
+        background-color: #dddddd;
+        border-radius: 10px;
         width: 20%;
         max-width: 200px;
+        height: 190px;
+        padding: 15px;
         &-item{
             margin-bottom: 15px;
             display: flex;
             flex-direction: column;
         }
+        &_checkbox{
+            display: flex;
+        }
         label{
+            padding-top: 8px;
             margin-right: 10px;
+            display: flex;
             input{
                 margin: 0 7px;
+                width: 50px;
             }
+        }
+        select{
+            padding-top: 8px;
         }
         &_img{
             display: flex;
             justify-content: flex-end;
+            margin-top: 15px;
         }
     }
     &_case{
         width: 80%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 .cards{
-
+    margin: 3%;
+    position: relative;
+    max-width: 600px;
+    width: 40%;
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    &__info{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: opacity .4s linear;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+        &_title{
+            margin: 10px;
+            font-size: 35px;
+            color: #fff;
+        }
+        &-subtitle{
+            margin: 0 10px;
+            font-size: 20px;
+            color: #fff;
+        }
+        &_but-case{
+            font-size: 30px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            button{
+                padding: 10px 30px;
+                font-size: 20px;
+            }
+        }
+    }
 }
-
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 6%;
 }
