@@ -7,6 +7,7 @@
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -104,41 +105,64 @@ header,
 main,
 footer,
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .container {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .menu {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menu__img {
   height: 80%;
 }
 .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .menu__reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .main_menu {
@@ -147,20 +171,30 @@ section {
   border-radius: 10px;
   width: 20%;
   max-width: 200px;
+  min-width: 190px;
   height: 190px;
   padding: 15px;
 }
 .main_menu-item {
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .main_menu_checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .main_menu label {
   padding-top: 8px;
   margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .main_menu label input {
@@ -171,15 +205,24 @@ section {
   padding-top: 8px;
 }
 .main_menu_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: 15px;
 }
 .main_case {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards {
@@ -201,9 +244,17 @@ section {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: opacity 0.4s linear;
   transition: opacity 0.4s linear;
   opacity: 0;
 }
@@ -223,9 +274,15 @@ section {
 .cards__info_but-case {
   font-size: 30px;
   margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
 }
 .cards__info_but-case button {
@@ -234,8 +291,82 @@ section {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px 6%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 1023px) {
+  .menu__reg {
+    width: 35%;
+    max-width: 265px;
+  }
+  .menu__reg_item {
+    margin: 0, 3px;
+  }
+  .cards__info_title {
+    font-size: 30px;
+  }
+  .cards__info-subtitle {
+    font-size: 18px;
+  }
+  .cards__info_prise {
+    font-size: 23px;
+  }
+  .cards__info_but {
+    padding: 7px 23px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .menu__img {
+    width: 50px;
+  }
+  .menu__nav_item {
+    font-size: 10px;
+  }
+  .menu__reg_item {
+    font-size: 10px;
+  }
+  .cards__info_title {
+    font-size: 19px;
+  }
+  .cards__info-subtitle {
+    font-size: 16px;
+  }
+  .cards__info_prise {
+    font-size: 22px;
+  }
+  .cards__info_but {
+    padding: 5px 18px;
+    font-size: 15px;
+  }
+  .cards {
+    width: 100%;
+  }
+  .main_menu label input {
+    margin: 0 2px;
+  }
+  .prav-inf {
+    font-size: 12px;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
