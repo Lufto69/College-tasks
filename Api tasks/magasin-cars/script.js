@@ -1,15 +1,33 @@
 let but = document.querySelectorAll(".cards__info_but"),
     cont = document.querySelector(".menu__reg_item > span"),
-    t = "jt",
     item = 0;
 
 but.forEach(button => {
   button.addEventListener("click", () => {
     cont.innerHTML = (++item);
-    but.innerHTML = ;
+    button.textContent = 'Отказаться';
+    
   })
 
 })
+
+
+let txt = document.querySelectorAll(".cards")
+
+
+
+  for (let i = 1; i < 11; i++) {
+    fetch(`https://jsonplaceholder.typicode.com/posts/` + i)
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+      txt.map(Math.sqrt) = (this.title);
+  }
+  
+
+
+
+
+console.log(txt)
 
 
 

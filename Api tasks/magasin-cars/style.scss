@@ -30,6 +30,7 @@
         border-radius: 10px;
         width: 20%;
         max-width: 200px;
+        min-width: 190px;
         height: 190px;
         padding: 15px;
         &-item{
@@ -120,4 +121,68 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 40px 6%;
+}
+
+@media (max-width: 1023px) {
+    .menu__reg{
+        width: 35%;
+        max-width: 265px;
+    }
+    .menu__reg_item{
+        margin: 0, 3px;
+    }
+    .cards__info_title{
+        font-size: 30px;
+    }
+    .cards__info-subtitle{
+        font-size: 18px;
+    }
+    .cards__info_prise{
+        font-size: 23px;
+    }
+    .cards__info_but{
+        padding: 7px 23px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__img{
+        width: 50px; 
+    }
+    .menu__nav_item{
+        font-size: 10px;
+    }
+    .menu__reg_item{
+        font-size: 10px;
+    }
+
+    .cards__info_title{
+        font-size: 19px;
+    }
+    .cards__info-subtitle{
+        font-size: 16px;
+    }
+    .cards__info_prise{
+        font-size:22px;
+    }
+    .cards__info_but{
+        padding: 5px 18px;
+        font-size: 15px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .main_menu label input{
+        margin: 0 2px;
+    }
+    .prav-inf{
+        font-size: 12px;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
 }

@@ -1,5 +1,6 @@
 OpenOwerlay();
 slider();
+
 //Оверлей меню
 function OpenOwerlay(){
     window.addEventListener('DOMContentLoaded', () => {
@@ -36,19 +37,6 @@ function slider(){
     })
   })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ymaps.ready(init);

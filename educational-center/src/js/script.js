@@ -1,4 +1,5 @@
 barba.hooks.enter( ( data ) => { console.log (data.next.namespace); });
+
 barba.init({
   
     views: [{
