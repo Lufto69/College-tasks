@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">кек</string>
+    <string name="app_name">first</string>
+
+
+    //Одноразовый текст
+    <string name="main_act">New Member Special</string>
+    <string name="main_act_subtitle">Support our handmade crotchet merchandise to get discounted vouchers. </string>
+    <string name="registration">Brews For Change</string>
+    <string name="registration_pred">Don’t have an account?</string>
+    <string name="registration_link"><u>Sign up</u></string>
+    <string name="registration_link2"><u>Login</u></string>
+    //Кнопки
+    <string name="started_but">Get Started</string>
+    <string name="registration_but">Sign In</string>
+    //Инпуты
+    <string name="input_reg">Email or Username</string>
+    <string name="input_pas">Password</string>
+    <string name="input_pas2">Confirm Password</string>
 </resources>

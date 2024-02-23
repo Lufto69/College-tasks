@@ -1,17 +1,19 @@
-package com.example.firstproject;
+package com.example.first;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+    }
+    public void goStart(View v) {
+        Intent intent = new Intent(this, Registration.class);
+        startActivity(intent);
     }
 }
