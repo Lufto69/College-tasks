@@ -65,6 +65,10 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .vau{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .cards{
@@ -123,6 +127,41 @@ footer{
     padding: 40px 6%;
 }
 
+
+
+.otz{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 100px;
+    .container_otz{
+        display: flex;
+        flex-direction: column;
+        input, textarea{
+            margin: 5px;
+            background: #cccccc;
+            width: 500px;
+        }
+        .bt_otzv{
+            width: 100px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1023px) {
     .menu__reg{
         width: 35%;
@@ -151,10 +190,10 @@ footer{
         width: 50px; 
     }
     .menu__nav_item{
-        font-size: 10px;
+        font-size: 9px;
     }
     .menu__reg_item{
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .cards__info_title{

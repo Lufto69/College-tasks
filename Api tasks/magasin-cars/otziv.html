@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Машазин уродливых машин</title>
+</head>
+<body>
+    <header class="menu">
+        <img src="logo.png" alt="" class="menu__img">
+        <nav>
+            <div class="menu__nav_item">Главная</div>
+            <div class="menu__nav_item">Каталог</div>
+            <div class="menu__nav_item">Контакты</div>
+            <div class="menu__nav_item">В кредит</div>
+            <div class="menu__nav_item">О нас</div>
+        </nav>
+        <div class="menu__reg">
+            <div class="menu__reg_item">Зарегестрироваться</div>|
+            <div class="menu__reg_item">Войти</div>
+            <div class="menu__reg_item">Корзина <span></span></div>
+        </div>
+    </header>
+
+    <main class="otz">
+        <h1>Оставьте комментарий</h1>
+        <form class="container_otz">
+            <input type="text" placeholder="Name" class="name">
+            <textarea name="Comments" id="Comments" cols="30" rows="10" placeholder="Comments" ></textarea>
+            <button class="bt_otzv">Отправить</button>
+        </form>
+
+
+        <div class="vrepper">
+            <template class="cont_otz">
+                <div class="otz">
+                    <span id="name_out"></span>
+                    <span id="text_out"></span>
+                </div>
+
+            </template>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <img src="logo.png" alt="" class="menu__img">
+        <div class="prav-inf">Все права защищены и бог вам в помощь&#8224;&#8224;&#8224;</div>
+        <div class="contacts">+89374513876</div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

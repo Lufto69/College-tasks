@@ -1,33 +1,57 @@
-let but = document.querySelectorAll(".cards__info_but"),
-    cont = document.querySelector(".menu__reg_item > span"),
-    item = 0;
+// let but = document.querySelectorAll(".cards__info_but"),
+//     cont = document.querySelector(".menu__reg_item > span"),
+//     item = 0;
 
-but.forEach(button => {
-  button.addEventListener("click", () => {
-    cont.innerHTML = (++item);
-    button.textContent = 'Отказаться';
+// but.forEach(button => {
+//   button.addEventListener("click", () => {
+//     cont.innerHTML = (++item);
+//     button.textContent = 'Отказаться';
     
-  })
+//   })
 
-})
-
-
-let txt = document.querySelectorAll(".cards")
+// })
 
 
+// let txt = document.querySelectorAll(".cards")
 
-  for (let i = 1; i < 11; i++) {
-    fetch(`https://jsonplaceholder.typicode.com/posts/` + i)
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-      txt.map(Math.sqrt) = (this.title);
-  }
+
+
+//   for (let i = 1; i < 11; i++) {
+//     fetch(`https://jsonplaceholder.typicode.com/posts/` + i)
+//       .then((response) => response.json())
+//       .then((json) => console.log(json));
+//       txt.map(Math.sqrt) = (this.title);
+//   }
   
+// console.log(txt)
 
 
 
+function getValue() {
 
-console.log(txt)
+  let bt = document.querySelector(".bt_otzv"),
+  vrap = document.querySelector(".vrepper"),
+  name = document.querySelector(".name"),
+  comments = document.querySelector("#Comments");
+  const temp = document.querySelector(".cont_otz"),
+  name_out = temp.content.querySelector("#name_out"),
+  text_out = temp.content.querySelector("#text_out");
+     
+  
+      bt.addEventListener("click", () => {
+        event.preventDefault();
+        name_out.textContent = (name.value);
+        text_out.textContent = (comments.value);
+        let dubl = temp.content.cloneNode(true);
+        vrap.append(dubl);
+        name.value = "";
+        comments.value = "";
+    })
+};
+
+getValue();
+
+
 
 
 
