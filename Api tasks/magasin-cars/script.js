@@ -1,17 +1,18 @@
-// let but = document.querySelectorAll(".cards__info_but"),
-//     cont = document.querySelector(".menu__reg_item > span"),
-//     item = 0;
+let but = document.querySelectorAll(".cards__info_but"),
+  cont = document.querySelector(".menu__reg_item > span"),
+  item = 0;
+  
+  but.forEach(button => {
+    button.addEventListener("click", () => {
+      cont.innerHTML = (++item);
+      button.textContent = 'Отказаться';
+      
+    })
 
-// but.forEach(button => {
-//   button.addEventListener("click", () => {
-//     cont.innerHTML = (++item);
-//     button.textContent = 'Отказаться';
-    
-//   })
+  })
 
-// })
-
-
+overlay()
+getValue();
 // let txt = document.querySelectorAll(".cards")
 
 
@@ -33,6 +34,7 @@ function getValue() {
   vrap = document.querySelector(".vrepper"),
   name = document.querySelector(".name"),
   comments = document.querySelector("#Comments");
+
   const temp = document.querySelector(".cont_otz"),
   name_out = temp.content.querySelector("#name_out"),
   text_out = temp.content.querySelector("#text_out");
@@ -49,7 +51,23 @@ function getValue() {
     })
 };
 
-getValue();
+
+
+
+
+function overlay(){
+  let over = document.querySelector(".overlay_case_card"),
+      Card = document.querySelectorAll(".cards"),
+      Img = Card.querySelector(".cards__img"),
+      Titl = Card.querySelector(".cards__info_title"),
+      SubTitl = Card.querySelector(".cards__info-subtitle"),
+      Prise = Card.querySelector(".cards__info_prise");
+
+  
+}
+
+
+
 
 
 
