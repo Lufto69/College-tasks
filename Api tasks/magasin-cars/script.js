@@ -1,3 +1,7 @@
+
+
+
+
 let but = document.querySelectorAll(".cards__info_but"),
   cont = document.querySelector(".menu__reg_item > span"),
   item = 0;
@@ -11,8 +15,13 @@ let but = document.querySelectorAll(".cards__info_but"),
 
   })
 
+
+
+
 overlay()
 getValue();
+
+
 // let txt = document.querySelectorAll(".cards")
 
 
@@ -56,12 +65,21 @@ function getValue() {
 
 
 function overlay(){
-  let over = document.querySelector(".overlay_case_card"),
-      Card = document.querySelectorAll(".cards"),
-      Img = Card.querySelector(".cards__img"),
-      Titl = Card.querySelector(".cards__info_title"),
-      SubTitl = Card.querySelector(".cards__info-subtitle"),
-      Prise = Card.querySelector(".cards__info_prise");
+  let cor = document.querySelector(".cors"),
+      overlay = document.querySelector(".overlay")
+
+  cor.addEventListener("click", () => {
+    overlay.classList.toggle("overlay-act")
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+
+  let card = querySelectorAll(".cards"),
+  btnCard = querySelectorAll(".cards__info_but")
+
+
+})
+
 
   
 }
