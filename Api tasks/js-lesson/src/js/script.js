@@ -21,20 +21,43 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
+
+// let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+
+// for (let i = 0; i < 2; i++) {
+//     personalMovieDB.movies[prompt('Один из последних просмотренных фильмов?', '')] = +prompt('На сколько оцените его?', '');
+// };
+
+// console.log(personalMovieDB)
+
 'use strict';
+color()
 
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+function color(){
+    let input = document.querySelector('.inp'),
+    button = document.querySelector('.btn'),
+    value = '';
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        value = input.value;
+        if(value == ''){
+            input.style.cssText = `background-color: #fff;`
+        } else {
+            input.style.cssText = `background-color: ${value};`
+        }
+    })
+}
 
-for (let i = 0; i < 2; i++) {
-    personalMovieDB.movies[prompt('Один из последних просмотренных фильмов?', '')] = +prompt('На сколько оцените его?', '');
-};
+function slider(){
+    let right = document.querySelector('')
 
-console.log(personalMovieDB)
+}
