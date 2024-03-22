@@ -279,27 +279,21 @@
 // }
 
 // transferWaitors(restorantData.waitors);
+// function foctorial(n) {
+//     if (n === 1){
+//         return 1
+//     } else {
+//         return n * foctorial(n - 1)
+//     }
+// }
+
+// console.log(foctorial(5))
+// console.log(sortStudentsByGroups(students))
+
 
 'use strict';
 color()
-
-
-
-function foctorial(n) {
-    if (n === 1){
-        return 1
-    } else {
-        return n * foctorial(n - 1)
-    }
-}
-
-console.log(foctorial(5))
-console.log(sortStudentsByGroups(students))
-
-
-
-
-
+slider()
 function color(){
     let input = document.querySelector('.inp'),
     button = document.querySelector('.btn'),
@@ -317,6 +311,73 @@ function color(){
 }
 
 function slider(){
-    let right = document.querySelector('')
+    var slide_left = document.querySelector('.l'),
+    slide_right = document.querySelector('.r'),
+    total_img = document.querySelectorAll('.swiper-slide'),
+    toch = document.querySelector(".tochki"),
+    temp_toch = document.querySelector(".tochki_t"),
+    tochs = document.querySelector(".toch"),
+    index = Math.floor(total_img.length/2),
+    it = 0;
+    
 
+    while (it < total_img.length){
+        let dubl = temp_toch.content.cloneNode(true);
+        toch.append(dubl);
+        it++
+    }
+
+    function on(){
+        total_img[index].style.display = 'block'
+    }
+
+    function off(){
+        total_img[index].style.display = 'none'
+    }
+
+    on()
+
+    slide_right.addEventListener('click', () => {
+        off()
+        if(index <= total_img.length){
+            ++index
+            slide_left.style.display = 'block'
+        } 
+        if(index == total_img.length - 1) {
+            slide_right.style.display = 'none'
+        }
+        on()
+    });
+
+    slide_left.addEventListener('click', () => {
+        off()
+        if(index >= 0){
+            --index
+            slide_right.style.display = 'block'
+        } 
+        if(index == 0){
+            slide_left.style.display = 'none'
+        }
+        on()
+    });
+
+    tochs.addEventListener('click', (e) => {
+        index = +toch[e];
+        console.log(index)
+        off()
+        on()
+    })
+
+    // function timeScrol(){
+    //     if(index < total_img.length - 1){
+    //         index++;
+    //     } else {
+    //         index = 0;
+    //     }
+    //     on()
+    //     off()
+    //     console.log('iter')
+    // }
+    // setInterval(timeScrol, 1000);
+   
 }
