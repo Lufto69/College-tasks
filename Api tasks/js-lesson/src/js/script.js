@@ -294,6 +294,8 @@
 'use strict';
 color()
 slider()
+
+
 function color(){
     let input = document.querySelector('.inp'),
     button = document.querySelector('.btn'),
@@ -308,15 +310,24 @@ function color(){
             input.style.cssText = `background-color: ${value};`
         }
     })
+
+    let overlay = document.querySelector('.over');
+    input.addEventListener('focus', () => {
+        overlay.classList('vizble')
+    })
+    input.addEventListener('blur', () => {
+        overlay.classList('vizble')
+    })
 }
+
 
 function slider(){
     var slide_left = document.querySelector('.l'),
     slide_right = document.querySelector('.r'),
     total_img = document.querySelectorAll('.swiper-slide'),
-    toch = document.querySelector(".tochki"),
     temp_toch = document.querySelector(".tochki_t"),
     tochs = document.querySelector(".toch"),
+    toch = document.querySelector(".tochki"),
     index = Math.floor(total_img.length/2),
     it = 0;
     
@@ -326,6 +337,9 @@ function slider(){
         toch.append(dubl);
         it++
     }
+
+
+
 
     function on(){
         total_img[index].style.display = 'block'
@@ -361,12 +375,18 @@ function slider(){
         on()
     });
 
-    tochs.addEventListener('click', (e) => {
-        index = +toch[e];
-        console.log(index)
-        off()
-        on()
+
+
+
+    tochs.forEach((cont, ind) => {
+        cont.addEventListener('click', () => {
+            it = ind;
+            console.log(it)
+            off()
+            on()
+        })
     })
+    
 
     // function timeScrol(){
     //     if(index < total_img.length - 1){

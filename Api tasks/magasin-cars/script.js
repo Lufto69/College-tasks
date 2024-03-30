@@ -1,5 +1,14 @@
 
 
+function drk(){
+  let dark = document.querySelector('body'); // НАходишь блок который будем менять. Это боди
+  let btn = document.querySelector('.blek'); // Находишь кнопку которой меняем
+  btn.addEventListener('click', () => { //(Дословно) Кнопка - Ивент - Какой ивент?(Клик) - (Аргументы) Аргументов нет - Следовательно
+    dark.classList.toggle('darkc') // Блок боди добовляем класс (togle делает так чтобы при повторном нажатии этот класс убирался) - Какой класс мы добовляем
+  })
+}
+drk() //Вызов функции
+//Предварительно создать класс который мы хотим добавть в CSS
 
 
 let but = document.querySelectorAll(".cards__info_but"),
