@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trueno";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@font-face {
+  font-family: "Trueno";
+  src: url(fonts/Trueno-75PE.otf);
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header a {
+  width: 20%;
+}
+header .logo {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .registration {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .item {
+  width: 350px;
+  margin: 15px;
+}
+main .item .wrapImg {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+main .item .wrapImg .img_item {
+  width: 100%;
+}
+main .item .title {
+  font-size: 18px;
+}
+main .item .subTitle {
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 200px;
+}
+footer .logo {
+  width: 300px;
+  height: 100px;
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promo img {
+  width: 50%;
+  max-width: 500px;
+}
+.promo .wrap_promo {
+  margin-left: 50px;
+}
+.promo h1 {
+  font-size: 28px;
+}
+.promo h2 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+.promo .wr {
+  margin-top: 100px;
+}
+.promo .wr a {
+  font-size: 24px;
+  padding: 10px 40px;
+  background-color: rgb(255, 239, 64);
+}
+
+.c2 {
+  margin-left: 50px;
+  margin-bottom: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.map {
+  margin-top: 40px;
+  width: 90%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.tel {
+  margin: 10px;
+}
+
+.title_o {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.text_o {
+  font-size: 18px;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  background-color: rgb(149, 255, 230);
+  padding: 10px 30px;
+  border-radius: 9px;
+}
