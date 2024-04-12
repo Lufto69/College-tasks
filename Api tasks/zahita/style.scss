@@ -37,3 +37,195 @@
         }
     }
 }
+
+
+.head_cont{
+    justify-content: space-between;
+    margin-top: 10px;
+    .logo{
+        height: 70px;
+        width: auto;
+    }
+    .my{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.chat_container{
+    margin-top: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    background: #e4e4e4;
+    .top_panel_chat{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: #e4e4e4;
+        .wrapper{
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin: 20px 40px;
+            img{
+                height: 20px;
+                margin: 0 10px;
+            }
+            .name_people{
+                font-size: 18px;
+                margin-left: 20px;
+            }
+            .icons_people{
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                img{      
+                    transform: translateX(-25%);    
+                    object-fit: fill;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .chst{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .chat_item{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px;
+            .data{
+                font-size: 12px;
+                color: #5c5c5c;
+            }
+            .masemge{
+                font-size: 16px;
+            }
+        }
+    }
+    .foot_panel_chat{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+            border: 1px solid #1f1f1f;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            width: 90%;
+        }
+        img{
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .chat_container .top_panel_chat .wrapper{
+        margin: 5px;
+    }
+}
+
+
+.first_block{
+    width: 100%;
+    display: flex;
+    background: #d6d6d6;
+    img{
+        border: 1px solid #000;
+        border-radius:10px;
+        max-width: 700px;
+        width: 30%;
+    }
+    .info{
+        margin: 30px 0 0 40px;
+        .name{
+            font-size: 24px;
+        }
+        .date{
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        .izmenit{
+            margin-top: 200px;
+        }
+    }
+}
+
+
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    height: 500px;
+    background: #d4d4d4;
+    border: 1px solid #000;
+    border-radius: 10px;
+    input{
+        padding: 10px 20px;
+        width: 300px;
+        margin: 5px 0 5px 50px;
+    }
+    div{
+        margin: 5px;
+        margin-left: 50px;
+    }
+    button{
+        width: 200px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+.overlay{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: none;
+}
+
+
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    .first_post{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .info_post{
+            height: 34px;
+            overflow: hidden;
+            .info_title{
+                font-size: 20px;
+            }
+            
+        }
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+}

@@ -6,16 +6,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
     but1.addEventListener('click', (e) => {
         e.preventDefault()
-        // if (inp.value == 'admin') {
+        if (inp2.value == 'admin') {
             inp.style.display = 'block'
             but1.style.display = 'none'
             btn2.style.display = 'block'
-        // }
+        }
     })
     btn2.addEventListener('click', (e) => {
         e.preventDefault()
-        inp.innerHTML = ''
-        inp2.innerHTML = ''
-        window.location.href = 'registr.html'
+        if (inp2.value == 'admin') {
+            inp.value = ''
+            inp2.value = ''
+            window.location.href = 'hats.html'
+        }
     })
 })
