@@ -22,22 +22,33 @@ btn.addEventListener('click', () => {
 })
 
 
-const open =document.querySelector('.open'),
+const wp = document.querySelectorAll('.info_post'),
 op = document.querySelectorAll('.open'),
-preopen = document.querySelectorAll('.preopen'),
-wp = document.querySelector('.info_post'),
-info_text = document.querySelector('.info_text')
+cl = document.querySelectorAll('.preopen'),
+info_text = document.querySelectorAll('.info_text')
 
+cl.forEach((e) => {
+    e.style.display = 'none'
+})
 
-op.forEach(e => {
-    e.addEventListener('click', () => {
-        e.remove()
-        wp.style.height = '100px'
+op.forEach((e) => {
+    e.addEventListener('click', function () {
+        let el = this.parentElement.querySelector('.info_text'),
+        op = this.parentElement.querySelector('.open'),
+        close = this.parentElement.querySelector('.preopen');
+        op.style.display = 'none'
+        el.style.display = 'block'
+        close.style.display = 'block'
     })
 })
-preopen.forEach(e => {
-    e.addEventListener('click', (e) => {
-        info_text.before(open)
-        wp.style.height = '34px'
+
+cl.forEach((e) => {
+    e.addEventListener('click', function () {
+        let el = this.parentElement.querySelector('.info_text'),
+        op = this.parentElement.querySelector('.open'),
+        close = this.parentElement.querySelector('.preopen');
+        op.style.display = 'block'
+        el.style.display = 'none'
+        close.style.display = 'none'
     })
 })
