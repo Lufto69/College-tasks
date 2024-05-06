@@ -1,3 +1,27 @@
+
+
+
+
+const multiply20 = (price) => price * 20;
+const divide100 = (price) => price / 100;
+const normalizePrice = (price) => price.toFixed(2);
+const addPrefix = (price) => "$" + String(price);
+
+const compose =
+  (...fns) =>
+  (x) =>
+    fns.reduceRight((res, fn) => fn(res), x);
+
+const discountWithPrefix = compose(
+  addPrefix,
+  normalizePrice,
+  divide100,
+  multiply20
+);
+
+console.log(discountWithPrefix(200.0))
+
+
 /* Задание на урок:
 
 1) У нас уже есть рабочее приложение, состоящее из отдельных функций. Представьте, что
