@@ -40,8 +40,11 @@
 
 
 .head_cont{
+    display: flex;
+    width: 100%;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin: 10px 10px 0 10px;
     .logo{
         height: 70px;
         width: auto;
@@ -136,11 +139,7 @@
     }
 }
 
-@media (max-width:500px) {
-    .chat_container .top_panel_chat .wrapper{
-        margin: 5px;
-    }
-}
+
 
 
 .first_block{
@@ -171,10 +170,12 @@
 
 
 .overlay{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: none;
     width: 80%;
     max-width: 500px;
     height: 500px;
@@ -183,7 +184,7 @@
     border-radius: 10px;
     input{
         padding: 10px 20px;
-        width: 300px;
+        width: 75%;
         margin: 5px 0 5px 50px;
     }
     div{
@@ -197,14 +198,6 @@
         margin-left: 50px;
     }
 }
-.overlay{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: none;
-}
 
 
 
@@ -216,16 +209,120 @@
         flex-direction: column;
         padding: 10px;
         .info_post{
-            height: 34px;
             overflow: hidden;
             .info_title{
                 font-size: 20px;
             }
-            
+            .info_text{
+                display: none;
+            }
         }
         img{
             width: 200px;
             height: auto;
+        }
+    }
+}
+a{
+    margin: 0 5px;
+}
+
+.wpapeer{
+    display: flex;
+    align-items: center;
+}
+.razrabotcic{
+    display: flex;
+}
+
+.cards{
+    margin: 3%;
+    position: relative;
+    max-width: 600px;
+    width: 40%;
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    &__info{
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: opacity .4s linear;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+        &_title{
+            margin: 10px;
+            font-size: 35px;
+            color: #fff;
+        }
+        &-subtitle{
+            margin: 0 10px;
+            font-size: 20px;
+            color: #fff;
+        }
+        &_but-case{
+            font-size: 30px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            button{
+                padding: 10px 30px;
+                font-size: 20px;
+                z-index: 20;
+            }
+        }
+    }
+}
+.razz{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.wrap_ludi{
+    display: flex;
+    justify-content: center;
+}
+.vrr{
+    flex-direction: column;
+}
+.el{
+    justify-content: flex-start;
+}
+@media (max-width:500px) {
+    .chat_container .top_panel_chat .wrapper{
+        margin: 5px;
+    }
+    .wpapeer{
+        flex-direction: column;
+        align-items: center;
+        div{
+            margin-top: 10px;
+        }
+    }
+    .wrap_ludi{
+        flex-direction: column;
+        align-items: center;
+        .cards{
+            width: 80%;
+        }
+    }
+    .first_block{
+        flex-direction: column;
+        align-items: center;  
+        .info .izm{
+            margin-top: 5px;
         }
     }
 }
