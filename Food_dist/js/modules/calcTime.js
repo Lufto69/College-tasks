@@ -47,9 +47,9 @@ function calcTime() {
             if(t.total <= 0){
                 clearInterval(timeInterval)
                 days.innerHTML = '00'
-            hours.innerHTML = '00'
-            minutes.innerHTML = '00'
-            seconds.innerHTML = '00'
+                hours.innerHTML = '00'
+                minutes.innerHTML = '00'
+                seconds.innerHTML = '00'
             }
         }
     }
