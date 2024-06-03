@@ -2,8 +2,8 @@ import EmployeesListItem from '../emploers-list-item/employees-list-item';
 
 import './employees-list.css';
 
-const EmployeesList = ({date, onDelite, onToggleProp}) => {
-    const elements = date.map(item => {
+const EmployeesList = ({data, onDelite, onToggleProp}) => {
+    const elements = data.map(item => {
         const {id, ...items} = item
         return (
             <EmployeesListItem 

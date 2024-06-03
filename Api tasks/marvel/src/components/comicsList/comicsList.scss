@@ -1,0 +1,24 @@
+.comicslist{
+    width: 100%;
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        max-width: 256px;
+        width: 100%;
+        &_img{
+            width: 100%;
+            height: auto;
+        }
+        &_name{
+            font-size: 14px;
+        }
+        &_prise{
+            color: rgba(0, 0, 0, 0.60);
+            font-size: 14px;
+        }
+    }
+}

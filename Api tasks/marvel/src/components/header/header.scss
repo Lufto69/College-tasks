@@ -1,0 +1,30 @@
+@import '../../style/variables.scss';
+
+.app{
+    &__header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 700;
+        span{
+            color: $main-color;
+        }
+    }
+    &__navigation{
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                font-size: 28px;
+                font-weight: 700;
+                margin: 0 10px;
+                &:hover{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

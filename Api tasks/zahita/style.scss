@@ -326,3 +326,26 @@ a{
         }
     }
 }
+
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    img{
+        width: 400px;
+        height: 700px;
+        object-fit: cover;
+    }
+    .info_title_item{
+        margin-top: 20px;
+        font-size: 30px;
+        width: 60%;
+    }
+    .info_text_item{
+        margin-top: 15px;
+        flex: 24px;
+        width: 60%;
+    }
+} 
