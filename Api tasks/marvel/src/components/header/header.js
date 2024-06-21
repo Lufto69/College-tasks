@@ -1,13 +1,21 @@
+import { Link, NavLink } from 'react-router-dom';
+
 import './header.scss'
 
 const header = () => {
     return (
         <header className="app__header">
-            <h1 className="app__title"><a href="#"><span>Maevel</span> information portal</a></h1>
+            <h1 className="app__title"><Link to="/"><span>Maevel</span> information portal</Link></h1>
             <nav className='app__navigation'>
                 <ul>
-                    <li><a href='#'>Characters</a></li>/
-                    <li><a href='#'>Comics</a></li>
+                    <li><NavLink 
+                        end 
+                        className={({isActive}) => (isActive ? 'activeNav' : '')} 
+                        to='/'>Characters</NavLink></li>
+                    /
+                    <li><NavLink 
+                        className={({isActive}) => (isActive ? 'activeNav' : '')} 
+                        to='/comics'>Comics</NavLink></li>
                 </ul>
             </nav>
         </header>

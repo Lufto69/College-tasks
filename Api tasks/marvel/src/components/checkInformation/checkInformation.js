@@ -1,87 +1,57 @@
-import { Component } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 
 import Spinner from '../spinner/spinner';
 import Error from '../Error/Error';
 import Skeleton from '../skeleton/Skeleton';
-import MarvelService from '../../services/MarvelService'
+import useMarvelService from '../../services/MarvelService'
 
 import './checkInformation.scss'
 
-class checkInformation extends Component {
-    state = {
-        char: null,
-        loading: false,
-        error: false
-    }
+const CheckInformation = (props) => {
 
-    marvelService = new MarvelService()
+    const [char, setChar] = useState(null);
 
-    componentDidMount() {
-        this.updateChar();
-    }
+    const {loading, error, getCharacter, clearError} = useMarvelService()
 
-    componentDidUpdate(prevProps){
-        if (this.props.charId !== prevProps.charId) {
-            this.updateChar();
-        }
-    }
+    useEffect(() => {
+        updateChar();
+    }, [props.charId])
 
-    updateChar = () => {
-        const {charId} = this.props;
+    const updateChar = () => {
+        const {charId} = props;
         if (!charId) {
             return;
         }
 
-        this.onCharLoading();
-
-        this.marvelService
-            .getCharacter(charId)
-            .then(this.onCharLoaded)
-            .catch(this.onError);
+        clearError()
+        getCharacter(charId)
+            .then(onCharLoaded)
     }
 
-    onCharLoaded = (char) => {
-        this.setState({
-            char, 
-            loading: false
-        })
+    const onCharLoaded = (char) => {
+        setChar(char)
     }
 
-    onCharLoading = () => {
-        this.setState({
-            loading: true
-        })
-    }
+    const skeleton = char || loading || error ? null : <Skeleton/>;
+    const errorMessage = error ? <Error/> : null;
+    const spinner = loading ? <Spinner/> : null;
+    const content = !(loading || error || !char) ? <View char={char}/> : null;
 
-    onError = () => {
-        this.setState({
-            loading: false,
-            error: true
-        })
-    }
-
-    render() {
-        const {char, loading, error} = this.state
-
-        const skeleton = char || loading || error ? null : <Skeleton/>;
-        const errorMessage = error ? <Error/> : null;
-        const spinner = loading ? <Spinner/> : null;
-        const content = !(loading || error || !char) ? <View char={char}/> : null;
-
-        return(
-            <div className="information">
-                {skeleton}
-                {errorMessage}
-                {spinner}
-                {content}
-            </div>
-        )
-    }
+    return(
+        <div className="information">
+            {skeleton}
+            {errorMessage}
+            {spinner}
+            {content}
+        </div>
+    )
+    
 }
 
 const View = ({char}) => {
-    const {name, desctiptoin, thumbnail, homepage, wiki, comics} = char
+    const {name, description, thumbnail, homepage, wiki, comics} = char
 
     let imgStyle = {'objectFit' : 'cover'};
     if (thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg') {
@@ -104,7 +74,7 @@ const View = ({char}) => {
                     </div>
                 </div>
             </div>
-            <p className="information__text">{desctiptoin}</p>
+            <p className="information__text">{description}</p>
             <h4 className="information__title">Comics:</h4>
             <ul className="information__comics">
                 {comics.length > 0 ? null : 'There is no comics with this character'}
@@ -113,10 +83,14 @@ const View = ({char}) => {
                         if (i > 9) {
                             return;
                         } 
+
+                        console.log(item.resourceURI.slice(/d/))
                         return (
-                            <li key={i} className="information__comics_item">
-                                {item.name}
-                            </li>
+                            <Link Link to={`/comics/${item.resourceURI.slice(43)}`}>
+                                <li key={i} className="information__comics_item">
+                                    {item.name}
+                                </li>
+                            </Link>
                         )
                     })
                 }                
@@ -125,8 +99,8 @@ const View = ({char}) => {
     )
 }
 
-checkInformation.propTypes = {
+CheckInformation.propTypes = {
     charId: PropTypes.number
 }
 
-export default checkInformation
+export default CheckInformation

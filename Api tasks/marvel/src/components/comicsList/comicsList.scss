@@ -1,6 +1,7 @@
 .comicslist{
     width: 100%;
     ul{
+        margin-top: 40px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -9,6 +10,7 @@
     &__item{
         max-width: 256px;
         width: 100%;
+        margin-top: 10px;
         &_img{
             width: 100%;
             height: auto;

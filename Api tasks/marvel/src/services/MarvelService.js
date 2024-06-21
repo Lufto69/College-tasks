@@ -1,39 +1,62 @@
-class MarvelService {
-    _apiBase = 'https://gateway.marvel.com:443/v1/public/characters';
-    _apiKey = 'apikey=b71a15405ecfefbd256a4c6fc0d4483b';
-    _baseOfset = 310
+import { useHttp } from "../hooks/http.hook";
 
-    getResource = async (url) => {
-        let res = await fetch(url);
+const useMarvelService = () => {
+    const _apiBaseCharacter = 'https://gateway.marvel.com:443/v1/public/characters';
+    const _apiBaseComics = 'https://gateway.marvel.com:443/v1/public/comics';
+    const _apiKey = 'apikey=b71a15405ecfefbd256a4c6fc0d4483b';
+    const _baseOfset = 310
 
-        if(!res.ok){
-            throw new Error(`ошибка по адресу ${url}, status ${res.status}`)
-        }
+    const {loading, request, error, clearError} = useHttp()
 
-        return await res.json()
-    } 
-
-    getAllCharacters = async (offset = this._baseOfset) => {
-        const res = await this.getResource(`${this._apiBase}?limit=9&offset=${offset}&${this._apiKey}`)
-        return res.data.results.map(this._transforsCharacter)
+    const getAllCharacters = async (offset = _baseOfset) => {
+        const res = await request(`${_apiBaseCharacter}?limit=9&offset=${offset}&${_apiKey}`)
+        return res.data.results.map(_transforsCharacter)
     }
 
-    getCharacter = async (id) => {
-        const res = await this.getResource(`${this._apiBase}/${id}?${this._apiKey}`)
-        return this._transforsCharacter(res.data.results[0])
+    const getCharacter = async (id) => {
+        const res = await request(`${_apiBaseCharacter}/${id}?${_apiKey}`)
+        return _transforsCharacter(res.data.results[0])
     }
 
-    _transforsCharacter = (char) => {
+    const getAllComics = async (offset = _baseOfset) => {
+        const res = await request(`${_apiBaseComics}?limit=8&offset=${offset}&${_apiKey}`)
+        return res.data.results.map(_transforsComics)
+    }
+
+    const getComics = async (id) => {
+        const res = await request(`${_apiBaseComics}/${id}?${_apiKey}`)
+        return _transforsComics(res.data.results[0])
+    }
+
+    const _transforsCharacter = (char) => {
         return {
             id: char.id,
             name: char.name,
-            desctiptoin: char.description ? `${char.description.slice(0, 210)}...` : 'There is no description for this character',
+            description: char.description ? `${char.description.slice(0, 210)}...` : 'There is no description for this character',
             thumbnail: char.thumbnail.path + '.' + char.thumbnail.extension,
             homepage: char.urls[0].url,
             wiki: char.urls[1].url,
             comics: char.comics.items
         }
     }
+
+    const _transforsComics = (comics) => {
+        return {
+            id: comics.id,
+            title: comics.title,
+            thumbnail: comics.thumbnail.path + '.' + comics.thumbnail.extension,
+            description: comics.description ? `${comics.description.slice(0, 210)}...` : 'There is no description for this character',
+            pageCount: comics.pageCount
+				? `${comics.pageCount} p.`
+				: "No information about the number of pages",
+            language: comics.textObjects[0]?.language || "en-us",
+			price: comics.prices[0].price
+				? `${comics.prices[0].price}$`
+				: "not available",
+        }
+    }
+
+    return {loading, error, getAllCharacters, getCharacter, clearError, getAllComics, getComics}
 }
 
-export default MarvelService
+export default useMarvelService
