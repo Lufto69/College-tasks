@@ -1,5 +1,5 @@
 OpenOwerlay();
-slider();
+// slider();
 
 //Оверлей меню
 function OpenOwerlay(){
@@ -22,21 +22,21 @@ function OpenOwerlay(){
     })
 }
 
-//Слайдер
-function slider(){
-  window.addEventListener('DOMContentLoaded', () => {
-    const sliderButtons = document.querySelectorAll(".carousel__panel_arrow"),
-          imegList = document.querySelector(".carousel__wraper");
+// //Слайдер
+// function slider(){
+//   window.addEventListener('DOMContentLoaded', () => {
+//     const sliderButtons = document.querySelectorAll(".carousel__panel_arrow"),
+//           imegList = document.querySelector(".carousel__wraper");
 
-    sliderButtons.forEach(button => {
-      button.addEventListener("click", () => {
-        const derection = button.id === "prev-slide" ? -1 : 1, //
-              scrollAmount = imegList.clientWidth * derection;
-        imegList.scrollBy({left: scrollAmount, behavior: 'smooth'});
-      })
-    })
-  })
-}
+//     sliderButtons.forEach(button => {
+//       button.addEventListener("click", () => {
+//         const derection = button.id === "prev-slide" ? -1 : 1, //
+//               scrollAmount = imegList.clientWidth * derection;
+//         imegList.scrollBy({left: scrollAmount, behavior: 'smooth'});
+//       })
+//     })
+//   })
+// }
 
 
 // ymaps.ready(init);

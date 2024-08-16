@@ -1,7 +1,19 @@
+/* Шрифт подключаем тут  */
+
+@font-face {
+  /* название */
+  font-family: "OpenSans";
+
+  /* Ссылка и указывает расширение */
+  src: url("fonts/MadiffureDemo.ttf") format("ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
   border: 0;
+  /* подключае шрифт так (Это подключенеи для всего проекта), подобным образом назначаем бля любого блока с текстом */
+  font-family: "OpenSans";
 }
 
 *,
@@ -193,6 +205,7 @@ section {
   width: auto;
 }
 .head_cont a {
+  margin: 0 13px;
   font-size: 18px;
 }
 
@@ -207,6 +220,13 @@ main .title {
   margin-top: 20px;
   text-align: center;
 }
+main .subtitle {
+  width: 900px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
 
 .cards-container {
   -webkit-box-pack: center;
@@ -217,6 +237,7 @@ main .title {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-width: 1100px;
 }
 
 .cards {
@@ -287,6 +308,11 @@ main .title {
   color: #fff;
 }
 
+.cards__info_but a {
+  color: #ffffff;
+  font-size: 28px;
+}
+
 .cards__info_but-case button {
   padding: 10px 30px;
   font-size: 20px;
@@ -301,6 +327,7 @@ main .title {
 }
 
 .first_block {
+  margin-top: 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +448,7 @@ a {
 }
 
 .wpapeer {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,12 +508,13 @@ a {
 
 .contW {
   width: 100%;
+  margin-top: 30px;
 }
 
 .cont {
   width: 100%;
   margin-left: 40px;
-  margin-top: 7px;
+  margin-top: 12px;
   font-size: 24px;
 }
 
@@ -573,6 +602,7 @@ a {
   }
 }
 .item {
+  margin-top: 30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

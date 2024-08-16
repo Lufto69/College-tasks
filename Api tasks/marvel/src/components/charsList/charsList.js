@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types'
 
-import Spinner from '../spinner/spinner';
-import Error from '../Error/Error';
 import useMarvelService from '../../services/MarvelService'
+import setContent from '../../utils/setContent';
 
 import './charsList.scss'
 
@@ -14,7 +13,7 @@ const CharsList = (props) => {
     const [offset, setOffset] = useState(310)
     const [charEnded, setCharEnded] = useState(false)
 
-    const {loading, error, getAllCharacters, clearError} = useMarvelService()
+    const {getAllCharacters, clearError, process, setProcess} = useMarvelService()
 
     useEffect(() => {
         onLoadingNewElements(offset, true)
@@ -38,6 +37,7 @@ const CharsList = (props) => {
         clearError()
         getAllCharacters(offset)
             .then(onCharListLoaded)
+            .then(() => setProcess('loaded'))
     }
 
     const itemRefs = useRef([]);
@@ -83,7 +83,7 @@ const CharsList = (props) => {
     return (
         <div className="charslist">
 
-            {error ? <Error/> : loading && !newItemLoading ? <Spinner/> : renderItems}
+            {setContent(process , renderItems)}
             
             <button 
                 className="button button__main button__long" 

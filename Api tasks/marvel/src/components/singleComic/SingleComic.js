@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom';
 
-import Spinner from '../spinner/spinner';
-import Error from '../Error/Error';
 import useMarvelService from '../../services/MarvelService';
+import setContent from '../../utils/setContent';
 
 import './SingleComic.scss';
 
 const SingleComic = () => {
     const [comics, setComics] = useState({})
-    const {getComics, loading, error, clearError} = useMarvelService()
+    const {getComics, clearError, process, setProcess} = useMarvelService()
     const {comicId} = useParams()
 
     useEffect(() => {
@@ -24,11 +23,12 @@ const SingleComic = () => {
         clearError()
         getComics(comicId)
             .then(onComicsLoaded)
+            .then(() => setProcess('loaded'))
     }
 
     return (
         <>
-            {error ? <Error/> : loading ? <Spinner/> : <View comics={comics}/>}
+            {setContent(process, <View comics={comics}/>)}
         </>
     )
 }

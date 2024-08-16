@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
-import Spinner from '../spinner/spinner';
-import Error from '../Error/Error';
 import useMarvelService from '../../services/MarvelService'
+import setContent from '../../utils/setContent';
 
 import './comicsList.scss'
 
@@ -13,17 +12,19 @@ const ComicsList = () => {
     const [offset, setOffset] = useState(310)
     const [charEnded, setCharEnded] = useState(false)
 
-    const {loading, error, getAllComics} = useMarvelService()
+    const {getAllComics, clearError, process, setProcess} = useMarvelService()
 
     useEffect(() => {
         onLoadedNewItem(offset, true)
     }, [])
 
     const onLoadedNewItem = (offset, inital) => {
+        clearError()
         inital ? setLoaded(false) : setLoaded(true)
 
         getAllComics(offset)
             .then(onLoadedComics)
+            .then(() => setProcess('loaded'))
     }
 
     const onLoadedComics = (newComicsListt) => {
@@ -69,7 +70,7 @@ const ComicsList = () => {
     return (
         <div className='comicslist'>
             
-            {error ? <Error/> : loading && !loaded ? <Spinner/> : renderItems}
+            {setContent(process, renderItems)}
 
             <button 
                 style = {{'display' : charEnded ? 'none' : 'block'}}

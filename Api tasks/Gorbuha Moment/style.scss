@@ -50,7 +50,8 @@
         width: auto;
     }
     a{
-        font-size: 18px;
+      margin: 0 13px;
+       font-size: 18px;
     }
 }
 main{
@@ -60,11 +61,22 @@ main{
         margin-top: 20px;
         text-align: center;
     }
+    .subtitle{
+      width: 900px;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
 }
+
+
+
 .cards-container{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    min-width: 1100px;
 }
 
 .cards {
@@ -73,6 +85,7 @@ main{
     max-width: 600px;
     width: 40%;
   }
+  
   .cards__img {
     width: 100%;
     -o-object-fit: cover;
@@ -114,11 +127,19 @@ main{
     align-items: center;
     color: #fff;
   }
+  .cards__info_but {
+    a{
+      color: #ffffff;
+      font-size: 28px;
+    }
+  }
   .cards__info_but-case button {
     padding: 10px 30px;
     font-size: 20px;
     z-index: 20;
+    
   }
+  
   .sale{
     .cards__info_prise{
         color:#ffcb30;
@@ -133,6 +154,7 @@ main{
 
 
 .first_block{
+    margin-top: 30px;
     width: 100%;
     display: flex;
     background: #d6d6d6;
@@ -242,6 +264,7 @@ a{
 }
 
 .wpapeer{
+  margin-top: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -282,11 +305,12 @@ a{
 }
 .contW{
     width: 100%;
+    margin-top: 30px;
 }
 .cont{
     width: 100%;
     margin-left: 40px;
-    margin-top: 7px;
+    margin-top: 12px;
     font-size: 24px;
 }
 .cozSet{
@@ -342,6 +366,7 @@ a{
 }
 
 .item{
+    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
